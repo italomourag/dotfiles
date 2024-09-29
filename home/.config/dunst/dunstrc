@@ -1,0 +1,489 @@
+# Veja dunst(5) para todas as opções de configuração
+
+[global]
+    ### Exibição ###
+
+    # Em qual monitor as notificações devem ser exibidas.
+    monitor = 0
+
+    # Exibir notificação no monitor focado. Os modos possíveis são:
+    #   mouse: seguir o ponteiro do mouse
+    #   keyboard: seguir a janela com foco no teclado
+    #   none: não seguir nada
+    #
+    # "keyboard" precisa de um gerenciador de janelas que exporte a
+    # propriedade _NET_ACTIVE_WINDOW.
+    # Isso deve ser o caso para quase todos os gerenciadores de janelas modernos.
+    #
+    # Se esta opção estiver definida como mouse ou keyboard, a opção do monitor
+    # será ignorada.
+    follow = none
+
+    ### Geometria ###
+
+    # largura dinâmica de 0 a 300
+    # largura = (0, 300)
+    # largura constante de 300
+    width = (300, 300)
+
+    # A altura de uma única notificação, excluindo a moldura.
+    height = (300, 300)
+
+    # Posicionar a notificação no canto superior direito
+    origin = bottom-right
+
+    # Deslocamento a partir da origem
+    offset = 31x32
+
+    # Fator de escala. É detectado automaticamente se o valor for 0.
+    scale = 0
+
+    # Número máximo de notificações (0 significa sem limite)
+    notification_limit = 5
+
+    ### Barra de progresso ###
+
+    # Ativar a barra de progresso. Ela aparece quando uma dica de progresso é passada com
+    # por exemplo dunstify -h int:value:12
+    progress_bar = true
+
+    # Definir a altura da barra de progresso. Isso inclui a moldura, então certifique-se
+    # de que ela é pelo menos o dobro da largura da moldura.
+    progress_bar_height = 10
+
+    # Definir a largura da moldura da barra de progresso
+    progress_bar_frame_width = 1
+
+    # Definir a largura mínima para a barra de progresso
+    progress_bar_min_width = 150
+
+    # Definir a largura máxima para a barra de progresso
+    progress_bar_max_width = 300
+
+    # Raio do canto para a barra de progresso. 0 desabilita cantos arredondados.
+    progress_bar_corner_radius = 0
+
+    # Definir quais cantos arredondar ao desenhar a barra de progresso. Se progress_bar_corner_radius
+    # estiver definido como 0, esta opção será ignorada.
+    progress_bar_corners = all
+
+    # Raio do canto para a imagem do ícone.
+    icon_corner_radius = 0
+
+    # Definir quais cantos arredondar ao desenhar a imagem do ícone. Se icon_corner_radius
+    # estiver definido como 0, esta opção será ignorada.
+    icon_corners = all
+
+    # Mostrar quantas mensagens estão atualmente ocultas (por causa de
+    # notification_limit).
+    indicate_hidden = yes
+
+    # A transparência da janela. Intervalo: [0; 100].
+    # Esta opção só funcionará se um gerenciador de janelas de composição estiver
+    # presente (por exemplo, xcompmgr, compiz, etc.). (Apenas X11)
+    transparency = 0
+
+    # Desenhar uma linha de altura "separator_height" em pixels entre duas
+    # notificações.
+    # Defina como 0 para desabilitar.
+    # Se gap_size for maior que 0, esta configuração será ignorada.
+    separator_height = 2
+
+    # Preenchimento entre o texto e o separador.
+    padding = 8
+
+    # Preenchimento horizontal.
+    horizontal_padding = 8
+
+    # Preenchimento entre texto e ícone.
+    text_icon_padding = 0
+
+    # Define a largura em pixels da moldura ao redor da janela de notificação.
+    # Defina como 0 para desabilitar.
+    frame_width = 0
+
+    # Define a cor da moldura ao redor da janela de notificação.
+    frame_color = "#aaaaaa"
+
+    # Tamanho do espaço a ser exibido entre as notificações - requer um compositor.
+    # Se o valor for maior que 0, separator_height será ignorado e uma borda
+    # de tamanho gap_size será desenhada ao redor de cada notificação.
+    # Eventos de clique em espaços atualmente não se propagam para aplicativos abaixo.
+    gap_size = 0
+
+    # Define a color for the separator.
+    # valores possíveis são:
+    #  * auto: o dunst tenta encontrar uma cor que se encaixe no fundo;
+    #  * foreground: use a mesma cor do primeiro plano;
+    #  * frame: use a mesma cor da moldura;
+    #  * qualquer outra coisa será interpretada como uma cor X.
+    separator_color = frame
+
+    # Tipo de ordenação.
+    # valores possíveis são:
+    #  * id: ordenar por id
+    #  * urgency_ascending: ordenar por urgência (baixo, depois normal, depois crítico)
+    #  * urgency_descending: ordenar por urgência (crítico, depois normal, depois baixo)
+    #  * update: ordenar por atualização (o mais recente sempre no topo)
+    sort = yes
+
+    # Não remover mensagens se o usuário estiver ocioso (sem entrada de mouse ou teclado)
+    # por mais de idle_threshold segundos.
+    # Defina como 0 para desabilitar.
+    # Um cliente pode definir a dica 'transient' para ignorar isso. Veja a seção de regras
+    # para como desativar isso se necessário
+    # idle_threshold = 120
+
+    ### Texto ###
+
+    font = Roboto Bold 9
+
+    # O espaçamento entre linhas. Se a altura for menor que a
+    # altura da fonte, será elevada para a altura da fonte.
+    line_height = 0
+
+    # Valores possíveis são:
+    # full: Permitir um pequeno subconjunto de marcação html nas notificações:
+    #        <b>bold</b>
+    #        <i>italic</i>
+    #        <s>strikethrough</s>
+    #        <u>underline</u>
+    #
+    #        Para uma referência completa, veja
+    #        <https://docs.gtk.org/Pango/pango_markup.html>.
+    #
+    # strip: Esta configuração é fornecida para compatibilidade com alguns clientes quebrados
+    #        que enviam marcação mesmo que não esteja habilitada no
+    #        servidor. O dunst tentará remover a marcação, mas a análise é
+    #        simplista, então usar esta opção fora das regras de correspondência para
+    #        aplicativos específicos *É ALTAMENTE DESACONSELHADO*.
+    #
+    # no:    Desabilitar a análise de marcação, as notificações recebidas serão tratadas como
+    #        texto simples. O dunst não anunciará que tem a capacidade de marcação de corpo
+    #        se isso for definido como uma configuração global.
+    #
+    # É importante notar que a marcação dentro da opção de formato será analisada
+    # independentemente do que isso estiver definido.
+    markup = full
+
+    # O formato da mensagem. Variáveis possíveis são:
+    #   %a  nome_do_aplicativo
+    #   %s  resumo
+    #   %b  corpo
+    #   %i  nome_do_ícone (incluindo seu caminho)
+    #   %I  nome_do_ícone (sem seu caminho)
+    #   %p  valor de progresso se definido ([  0%] a [100%]) ou nada
+    #   %n  valor de progresso se definido sem caracteres extras
+    #   %%  Percentual literal
+    # A marcação é permitida
+    format = "<b>%s</b>\n%b"
+
+    # Alinhamento do texto da mensagem.
+    # Valores possíveis são "left", "center" e "right".
+    alignment = left
+
+    # Alinhamento vertical do texto da mensagem e ícone.
+    # Valores posíveis são "top", "center" e "bottom".
+    vertical_alignment = center
+
+    # Mostrar a idade da mensagem se a mensagem for mais velha que show_age_threshold
+    # segundos.
+    # Defina como -1 para desabilitar.
+    show_age_threshold = 60
+
+    # Especificar onde fazer uma elipse em linhas longas.
+    # Valores possíveis são "start", "middle" e "end".
+    ellipsize = middle
+
+    # Ignorar quebras de linha '\n' nas notificações.
+    ignore_newline = no
+
+    # Agrupar notificações com o mesmo conteúdo
+    stack_duplicates = true
+
+    # Ocultar a contagem de notificações empilhadas com o mesmo conteúdo
+    hide_duplicate_count = false
+
+    # Exibir indicadores para URLs (U) e ações (A).
+    show_indicators = yes
+
+    ### Ícones ###
+
+    # Pesquisa recursiva de ícones. Você pode definir um único tema, em vez de ter que
+    # definir todos os caminhos de pesquisa.
+    enable_recursive_icon_lookup = true
+
+    # Definir tema de ícone (usado apenas para pesquisa recursiva de ícones)
+    icon_theme = Papirus-Light
+    # Você também pode definir vários temas de ícone, sendo o mais à esquerda o usado primeiro.
+    # icon_theme = "Adwaita, breeze"
+
+    # Alinhar ícones à left/right/up/off
+    icon_position = left
+
+    # Redimensionar ícones pequenos até este tamanho, defina como 0 para desabilitar. Útil
+    # para, por exemplo, arquivos pequenos ou telas de alta dpi. Em caso de conflito,
+    # max_icon_size tem precedência sobre isso.
+    min_icon_size = 16
+
+    # Redimensionar ícones maiores até este tamanho, defina como 0 para desabilitar
+    max_icon_size = 64
+
+    # Caminhos para ícones padrão (apenas necessário quando não se usa pesquisa recursiva de ícones)
+    icon_path = /usr/share/icons/Papirus/16x16/status/:/usr/share/icons/Papirus/16x16/devices/
+
+    ### Histórico ###
+
+    # A notificação que surgiu do histórico deve ser fixa ou expirar
+    # como normalmente faria.
+    sticky_history = yes
+
+    # Máxima quantidade de notificações mantidas no histórico
+    history_length = 5
+
+    ### Diversos/Avançado ###
+
+    # Caminho do dmenu.
+    dmenu = /usr/bin/dmenu -p dunst:
+
+    # Navegador para abrir URLs no menu de contexto.
+    browser = /usr/bin/xdg-open
+
+    # Sempre execute scripts definidos por regras, mesmo que a notificação esteja suprimida
+    always_run_script = true
+
+    # Define o título das janelas geradas pelo dunst (apenas X11)
+    title = Dunst
+
+    # Define a classe das janelas geradas pelo dunst (apenas X11)
+    class = Dunst
+
+    # Define o raio dos cantos da janela de notificação
+    # em pixels. Se o raio for 0, não haverá cantos arredondados.
+    # O raio será automaticamente reduzido se exceder metade da
+    # altura da notificação para evitar recorte de texto e/ou ícones.
+    corner_radius = 2
+
+    # Define quais cantos arredondar ao desenhar a janela. Se o raio do canto
+    # estiver definido como 0, esta opção será ignorada.
+    #
+    # Lista separada por vírgulas dos cantos. Os valores de canto aceitos são bottom-right,
+    # bottom-left, top-right, top-left, top, bottom, left, right ou all.
+    corners = all
+
+    # Ignora a mensagem dbus closeNotification.
+    # Útil para impor o tempo limite definido pela configuração do dunst. Sem este
+    # parâmetro, um aplicativo pode fechar a notificação enviada antes do
+    # tempo limite definido pelo usuário.
+    ignore_dbusclose = false
+
+    ### Wayland ###
+    # Estas configurações são específicas para Wayland. Elas não têm efeito ao usar X11.
+
+    # Descomente isso se quiser que as notificações apareçam sob aplicativos em tela cheia
+    # (padrão: overlay)
+    # layer = top
+
+    # Defina isso como true para usar saída X11 no Wayland.
+    force_xwayland = false
+
+    ### Legacy
+
+    # Use a extensão Xinerama em vez de RandR para suporte a múltiplos monitores.
+    # Esta configuração é fornecida para compatibilidade com drivers nVidia mais antigos que
+    # não suportam RandR, e seu uso em sistemas que suportam RandR é altamente
+    # desencorajado.
+    #
+    # Ao habilitar esta configuração, o dunst não conseguirá detectar quando um monitor
+    # é conectado ou desconectado, o que pode quebrar o modo de seguimento se o layout da tela
+    # mudar.
+    force_xinerama = false
+
+    ### Mouse
+
+    # Define a lista de ações para cada evento do mouse
+    # Os valores possíveis são:
+    # * none: Não faça nada.
+    # * do_action: Invoca a ação determinada pela regra action_name. Se não houver
+    #              tal ação, abra o menu de contexto.
+    # * open_url: Se a notificação tiver exatamente uma URL, abra-a. Se houver várias
+    #              URLs, abra o context menu.
+    # * close_current: Fecha a notificação atual.
+    # * close_all: Fecha todas as notificações.
+    # * context: Abre o context menu para todas as notificações.
+    # * context_all: Open context menu for all notifications.
+    # Esses valores podem ser encadeados para cada evento do mouse, e
+    # serão executados em sequência.
+    mouse_left_click = close_current
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_all
+
+    # Recursos experimentais que podem ou não funcionar corretamente. Não espere que eles
+    # tenham um comportamento consistente entre as versões.
+    [experimental]
+    # Calcule o dpi a ser usado com base em cada monitor.
+    # Se esta configuração estiver habilitada, o valor Xft.dpi será ignorado e em vez disso
+    # o dunst tentará calcular um valor de dpi apropriado para cada monitor
+    # usando a resolução e o tamanho físico. Isso pode ser útil em configurações
+    # onde há várias telas com valores de dpi muito diferentes.
+    per_monitor_dpi = false
+
+
+    [urgency_low]
+    # IMPORTANTE: as cores devem ser definidas entre aspas.
+    # Caso contrário, o "#" e o que se segue seriam interpretados como um comentário.
+    background = "#f0f0f099"
+    foreground = "#484848"
+    timeout = 4
+    # Ícone para notificações com baixa urgência, descomente para habilitar
+    #default_icon = /path/to/icon
+
+    [urgency_normal]
+    background = "#f0f0f099"
+    foreground = "#484848"
+    timeout = 4
+    override_pause_level = 30
+    # Ícone para notificações com urgência normal, descomente para habilitar
+    #default_icon = /path/to/icon
+
+    [urgency_critical]
+    background = "#f01e2c"
+    foreground = "#ffffff"
+    frame_color = "#ff0000"
+    timeout = 0
+    override_pause_level = 60
+    # Ícone para notificações com urgência crítica, descomente para habilitar
+    #default_icon = /path/to/icon
+
+    # Cada seção que não é uma das acima é interpretada como regras para
+    # substituir configurações para certas mensagens.
+    #
+    # As mensagens podem ser combinadas por
+    #    appname (desencorajado, veja desktop_entry)
+    #    body
+    #    category
+    #    desktop_entry
+    #    icon
+    #    match_transient
+    #    msg_urgency
+    #    stack_tag
+    #    summary
+    #
+    # e você pode substituir o
+    #    background
+    #    foreground
+    #    format
+    #    frame_color
+    #    fullscreen
+    #    new_icon
+    #    set_stack_tag
+    #    set_transient
+    #    set_category
+    #    timeout
+    #    urgency
+    #    icon_position
+    #    skip_display
+    #    history_ignore
+    #    action_name
+    #    word_wrap
+    #    ellipsize
+    #    alignment
+    #    hide_text
+    #    override_pause_level
+    #
+    # A expansão de padrões como no shell será aplicada.
+    #
+    # Em vez do filtro appname, é recomendado usar o fitro desktop_entry.
+    # Aplicativos baseados em GLib exportam seu nome desktop-entry. Em comparação ao appname,
+    # a entrada de desktop não será localizada.
+    #
+    # Você também pode permitir que uma notificação apareça mesmo quando pausada. A notificação aparecerá sempre que o nível de notificação override_pause_level >= o nível pausado do dunst.
+    # Isso pode ser usado para definir modos de pausa parcial, onde notificações mais urgentes passam, mas as menos urgentes permanecem pausadas. Para fazer isso, você pode substituir o seguinte nas regras:
+    # override_pause_level = X
+    #
+    # SCRIPTING
+    # Você pode especificar um script que será executado quando a regra corresponder
+    # definindo a opção "script".
+    # O script será chamado da seguinte forma:
+    # script appname summary body icon urgency
+    # onde a urgência pode ser "LOW", "NORMAL" ou "CRITICAL".
+    #
+    # NOTA: Pode ser útil executar dunst -print em um terminal para
+    # encontrar opções adequadas para regras.
+    #
+    # Desative a dica transitória para que idle_threshold não possa ser ignorado pelo
+    # cliente
+    #[transient_disable]
+    #    match_transient = yes
+    #    set_transient = no
+    #
+    # Faça o manuseio de notificações transitórias ser mais rigoroso, fazendo com que elas não
+    # sejam colocadas na história.
+    #[transient_history_ignore]
+    #    match_transient = yes
+    #    history_ignore = yes
+
+    # Valores de tela cheia
+    # show: mostra as notificações, independentemente de haver uma janela em tela cheia aberta
+    # delay: exibe a nova notificação, se não houver janela em tela cheia ativa
+    #        Se a notificação já estiver desenhada, não será desfeita.
+    # pushback: igual ao delay, mas ao mudar para tela cheia, a notificação será
+    #           retirada da tela novamente e será atrasada como uma nova notificação.
+    #[fullscreen_delay_everything]
+    #    fullscreen = delay
+    #[fullscreen_show_critical]
+    #    msg_urgency = critical
+    #    fullscreen = show
+
+    #[espeak]
+    #    summary = "*"
+    #    script = dunst_espeak.sh
+
+    #[espeak]
+    #    summary = "*"
+    #    script = dunst_espeak.sh
+
+    #[script-test]
+    #    summary = "*script*"
+    #    script = dunst_test.sh
+
+    #[ignore]
+    #    # Esta notificação não será exibida.
+    #    summary = "foobar"
+    #    skip_display = true
+
+    #[history-ignore]
+    #    # Esta notificação não será exibida, mas será incluída na história.
+    #    summary = "foobar"
+    #    history_ignore = yes
+
+    #[skip-display]
+    #    # This notification will not be displayed, but will be included in the history
+    #    summary = "foobar"
+    #    skip_display = yes
+
+    #[signed_on]
+    #    appname = Pidgin
+    #    summary = "*signed on*"
+    #    urgency = low
+    #
+    #[signed_off]
+    #    appname = Pidgin
+    #    summary = *signed off*
+    #    urgency = low
+    #
+    #[says]
+    #    appname = Pidgin
+    #    summary = *says*
+    #    urgency = critical
+    #
+    #[twitter]
+    #    appname = Pidgin
+    #    summary = *twitter.com*
+    #    urgency = normal
+    #
+    #[stack-volumes]
+    #    appname = "some_volume_notifiers"
+    #    set_stack_tag = "volume"
+    #
+    # vim: ft=cfg

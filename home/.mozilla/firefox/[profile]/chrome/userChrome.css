@@ -1,0 +1,53 @@
+/* Arquivo fonte https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/autohide_main_toolbar.css disponibilizado sob a Licença Pública Mozilla v. 2.0
+Veja o repositório acima para atualizações, bem como o texto completo da licença. */
+
+/* Este estilo oculta a barra de ferramentas principal e a exibe quando o cursor está sobre a barra de ferramentas de abas, assim como sempre que o foco está dentro da barra de navegação, como quando a barra de URL está focada. */
+
+:root{ --uc-navbar-transform: -40px }
+:root[uidensity="compact"]{ --uc-navbar-transform: -34px }
+
+#navigator-toolbox > div{ display: contents; }
+:root[sessionrestored] :where(#nav-bar,#PersonalToolbar,#tab-notification-deck,.global-notificationbox){
+  transform: translateY(var(--uc-navbar-transform))
+}
+:root:is([customizing],[chromehidden*="toolbar"]) :where(#nav-bar,#PersonalToolbar,#tab-notification-deck,.global-notificationbox){
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+#nav-bar:not([customizing]){
+  opacity: 0;
+  transition:  transform 400ms ease 1.8s, opacity 400ms ease 1.8s !important;
+  position: relative;
+  z-index: 2;
+}
+#titlebar{ position: relative; z-index: 3 }
+
+/* Exibir quando a caixa de ferramentas está em foco, como quando a barra de URL recebeu foco */
+#navigator-toolbox:focus-within > .browser-toolbar{
+  transform: translateY(0);
+  opacity: 1;
+  transition-duration: 500ms, 200ms !important;
+  transition-delay: 0s !important;
+}
+/* Exibir quando a caixa de ferramentas é sobreposta */
+#titlebar:hover ~ .browser-toolbar,
+#nav-bar:hover,
+#nav-bar:hover + #PersonalToolbar{
+  transform: translateY(0);
+  opacity: 1;
+  transition-duration: 500ms, 200ms !important;
+  transition-delay: 0s !important;
+}
+/* Este conjunto de regras é separado, porque a falta de suporte a quebra outros seletores também */
+#mainPopupSet:has(> #appMenu-popup:hover) ~ #navigator-toolbox > .browser-toolbar{
+  transition-delay: 33ms !important;
+  transform: translateY(0);
+  opacity: 1;
+} 
+
+/* A barra de ferramentas de favoritos precisa de algumas regras extras */
+#PersonalToolbar{ transition: transform 400ms ease 1.8s !important; position: relative; z-index: 1 }
+
+/* Mover para cima a visualização do conteúdo */
+:root[sessionrestored]:not([inFullscreen],[chromehidden~="toolbar"]) > body > #browser{ margin-top: var(--uc-navbar-transform); }

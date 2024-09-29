@@ -1,0 +1,78 @@
+#XfcePanelWindow {
+    -XfcePanelWindow-popup-delay: 0;
+    -XfcePanelWindow-popdown-delay: 4000;
+}
+
+menu, .csd .menu, .csd .dropdown, .csd .context-menu {
+    border-radius: 1px;
+}
+
+    .xfce4-panel .tasklist .toggle {
+    background-color: transparent;
+    color: darkslategrey;
+#    -gtk-icon-shadow: 1px 0px rgba(0, 0, 0, 0.7);
+}
+
+.xfce4-panel#XfcePanelWindow {
+    border-radius: 0px;
+}
+
+#docklike-plugin button {
+    padding: 0;
+    margin: 0px min-width: 48px;
+    margin-right: 4px;
+}
+
+#docklike-plugin .window_count {
+    color: red;
+}
+
+#docklike-plugin .open_group .window_count {
+    color: white;
+}
+
+#docklike-plugin .active_group .window_count {
+    color: hotpink;
+}
+
+#xfce4-notification-plugin * {
+    -gtk-icon-transform: scale(.8);
+}
+
+#pulseaudio-button * {
+    margin-right: -1px;
+    color: darkslategrey;
+    -gtk-icon-transform: scale(.8);
+}
+
+#xfce4-power-manager-plugin* {
+    margin-left: -2px;
+    margin-right: -1px;
+    color: #444444;
+    -gtk-icon-palette: warning #FF0000, success #444444, error #FF0000;
+    -gtk-icon-transform: scale(0.8);
+}
+
+#clock-button {
+    color: darkslategrey;
+    font-style: bold;
+}
+
+#sn-button image { -gtk-icon-transform: scale(.9);
+    margin-left: 2px;
+}
+
+# EXPERIMENTAL
+#
+#    .xfce4-panel .tasklist .toggle:checked {
+#     background-color: mediumpurple;
+#}
+#
+#    .xfce4-panel .tasklist .toggle:hover {
+#    background-color: ;
+#    color: ;
+#}
+
+#    calendar {
+#    padding: 2px;
+#}

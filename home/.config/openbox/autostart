@@ -1,0 +1,27 @@
+#Wallpaper
+nitrogen --restore &
+
+#Polkit
+sleep 1 && /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+#Painel 
+xfce4-panel &
+#tint2 &
+nm-applet &
+blueman-applet &
+
+#Notificação
+dunst &
+
+#Compositor
+picom -b &
+
+#Conky
+sleep 2 && conky &
+
+#Remover descanso de tela
+xset -dpms &
+xset s off &
+
+#Desabilitar beep
+xset b off &

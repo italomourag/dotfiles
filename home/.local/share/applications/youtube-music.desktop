@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=YouTube Music
+Exec=/home/ito/.local/share/applications/youtube-music.sh
+Terminal=false
+Type=Application
+Icon=youtube-music
+StartupWMClass=YouTube Music
+Comment=YouTube Music Desktop App - including custom plugins
+Categories=AudioVideo;

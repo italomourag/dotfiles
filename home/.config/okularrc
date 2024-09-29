@@ -1,0 +1,42 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=false
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[MainWindow][Toolbar mainToolBar]
+IconSize=16
+ToolButtonStyle=IconOnly
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/(1 ed) Ludwig Wittgenstein - Investigações Filosóficas-UNICAMP (2017).pdf
+File10[$e]=$HOME/Downloads/_O mito do Estado 1944.pdf
+File2[$e]=$HOME/Downloads/Kierkegaard - Ou-ou.pdf
+File3[$e]=$HOME/Downloads/1-a.pdf
+File4[$e]=$HOME/Downloads/O paradoxo do Homem-máquina. La Mettrie foi cartesiano.pdf
+File5[$e]=$HOME/Downloads/Manifesto do Circulo de Viena.pdf
+File6[$e]=$HOME/Downloads/Paul Veyne - Acreditavam os Gregos em seus Mitos.pdf
+File7[$e]=$HOME/Downloads/Memórias de um doente dos nervos - Schreber.pdf
+File8[$e]=$HOME/Documentos/FPO/Filosofia do Direito/Filosofia do Direito - Josemar Soares.pdf
+File9[$e]=$HOME/Desktop/Coisas/Questão de concurso.pdf
+Name1[$e]=(1 ed) Ludwig Wittgenstein - Investigações Filosóficas-UNICAMP (2017).pdf
+Name10[$e]=_O mito do Estado 1944.pdf
+Name2[$e]=Kierkegaard - Ou-ou.pdf
+Name3[$e]=1-a.pdf
+Name4[$e]=O paradoxo do Homem-máquina. La Mettrie foi cartesiano.pdf
+Name5[$e]=Manifesto do Circulo de Viena.pdf
+Name6[$e]=Paul Veyne - Acreditavam os Gregos em seus Mitos.pdf
+Name7[$e]=Memórias de um doente dos nervos - Schreber.pdf
+Name8[$e]=Filosofia do Direito - Josemar Soares.pdf
+Name9[$e]=Questão de concurso.pdf
+
+[Toolbar mainToolBar]
+IconSize=16
+ToolButtonStyle=IconOnly
+
+[UiSettings]
+ColorScheme=Breeze Light

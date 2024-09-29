@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-notifyd" version="1.0">
+  <property name="applications" type="empty">
+    <property name="known_applications" type="array">
+      <value type="string" value="bleachbit"/>
+      <value type="string" value="blueman"/>
+      <value type="string" value="chromium"/>
+      <value type="string" value="com.github.taiko2k.tauonmb"/>
+      <value type="string" value="Firefox"/>
+      <value type="string" value="org.freedesktop.network-manager-applet"/>
+      <value type="string" value="org.kde.kdenlive"/>
+      <value type="string" value="org.nicotine_plus.Nicotine"/>
+      <value type="string" value="org.qbittorrent.qBittorrent"/>
+      <value type="string" value="org.telegram.desktop"/>
+      <value type="string" value="org.xfce.Thunar"/>
+      <value type="string" value="Spotify"/>
+      <value type="string" value="tauonmb"/>
+      <value type="string" value="tor-browser"/>
+      <value type="string" value="Transmission"/>
+      <value type="string" value="Xfce volume control"/>
+      <value type="string" value="Xfce4-notifyd settings"/>
+      <value type="string" value="xfce4-power-manager"/>
+      <value type="string" value="YouTube Music"/>
+    </property>
+  </property>
+  <property name="theme" type="string" value="Materia Notify"/>
+  <property name="expire-timeout" type="int" value="3"/>
+  <property name="do-fadeout" type="bool" value="false"/>
+  <property name="initial-opacity" type="double" value="0.80000000000000004"/>
+  <property name="date-time-format" type="int" value="0"/>
+  <property name="date-time-custom-format" type="string" value="%a %H:%M:%S"/>
+  <property name="log-max-size-enabled" type="bool" value="true"/>
+  <property name="show-text-with-gauge" type="bool" value="false"/>
+  <property name="notification-display-fields" type="string" value="full"/>
+  <property name="show-notifications-on" type="string" value="primary-monitor"/>
+  <property name="log-level" type="string" value="not-fully-shown"/>
+  <property name="log-level-apps" type="string" value="all"/>
+  <property name="notify-location" type="string" value="bottom-right"/>
+  <property name="do-slideout" type="bool" value="false"/>
+</channel>

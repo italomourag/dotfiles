@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="dark-mode" type="bool" value="false"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=0;x=683;y=743"/>
+      <property name="length" type="double" value="1"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="20"/>
+      <property name="size" type="uint" value="26"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="7"/>
+        <value type="int" value="8"/>
+        <value type="int" value="3"/>
+        <value type="int" value="2"/>
+        <value type="int" value="1"/>
+        <value type="int" value="6"/>
+        <value type="int" value="4"/>
+        <value type="int" value="12"/>
+        <value type="int" value="5"/>
+      </property>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.90588235294117647"/>
+        <value type="double" value="0.90980392156862744"/>
+        <value type="double" value="0.92156862745098034"/>
+        <value type="double" value="0.74832214765100669"/>
+      </property>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="autohide-behavior" type="uint" value="1"/>
+      <property name="enable-struts" type="bool" value="true"/>
+      <property name="mode" type="uint" value="0"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-12" type="string" value="clock">
+      <property name="digital-date-font" type="string" value="Roboto Condensed, Bold 10"/>
+      <property name="digital-time-font" type="string" value="Roboto Condensed, Bold 10"/>
+      <property name="digital-layout" type="uint" value="3"/>
+      <property name="mode" type="uint" value="2"/>
+      <property name="timezone" type="string" value="Brazil/East"/>
+      <property name="digital-time-format" type="string" value="%_H:%M"/>
+    </property>
+    <property name="plugin-4" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="false"/>
+    </property>
+    <property name="plugin-7" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="false"/>
+    </property>
+    <property name="plugin-5" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-2" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="known-players" type="string" value="Chromium;firefox;org.kde.gwenview;spotify;tauonmb;vlc;YouTube Music"/>
+      <property name="show-notifications" type="uint" value="3"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (68%)"/>
+        <value type="string" value="conexão de rede wi-fi “direito - fpo” ativa: direito - fpo (82%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (67%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (58%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (56%)"/>
+        <value type="string" value="conexão de rede wi-fi “direito - fpo” ativa: direito - fpo (57%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (54%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (53%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (66%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (62%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (65%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (71%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (68%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (59%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (74%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (61%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (63%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (84%)"/>
+        <value type="string" value="notification-daemon"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (30%)"/>
+        <value type="string" value="conexão de rede wi-fi “direito - fpo” ativa: direito - fpo (65%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (94%)"/>
+        <value type="string" value="conexão de rede wi-fi “direito - fpo” ativa: direito - fpo (62%)"/>
+        <value type="string" value="conexão de rede wi-fi “direito - fpo” ativa: direito - fpo (50%)"/>
+        <value type="string" value="conexão de rede wi-fi “alf” ativa: alf (89%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (29%)"/>
+        <value type="string" value="conexão de rede wi-fi “direito - fpo” ativa: direito - fpo (69%)"/>
+        <value type="string" value="conexão de rede wi-fi “direito - fpo” ativa: direito - fpo (84%)"/>
+        <value type="string" value="conexão de rede wi-fi “planeta net - apartamentos” ativa: planeta net - apartamentos (65%)"/>
+        <value type="string" value="conexão de rede wi-fi “direito - fpo” ativa: direito - fpo (75%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (85%)"/>
+        <value type="string" value="conexão de rede wi-fi “direito - fpo” ativa: direito - fpo (64%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (32%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (46%)"/>
+        <value type="string" value="conexão de rede wi-fi “alf” ativa: alf (92%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (64%)"/>
+        <value type="string" value="configurando conexão de rede wi-fi “alf”…"/>
+        <value type="string" value="conexão de rede wi-fi “pixel 7” ativa: pixel 7 (89%)"/>
+        <value type="string" value="conexão de rede wi-fi “alf” ativa: alf (99%)"/>
+        <value type="string" value="conexão de rede wi-fi “alf” ativa: alf (94%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (79%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (80%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (85%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (92%)"/>
+        <value type="string" value="requisitando um endereço de rede wi-fi para “alf”…"/>
+        <value type="string" value="conexão de rede wi-fi “alf” ativa: alf (97%)"/>
+        <value type="string" value="conexão de rede wi-fi “alf” ativa: alf (87%)"/>
+        <value type="string" value="conexão de rede wi-fi “alf” ativa: alf (90%)"/>
+        <value type="string" value="conexão de rede wi-fi “alf” ativa: alf (100%)"/>
+        <value type="string" value="conexão de rede wi-fi “alf” ativa: alf (71%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (37%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (35%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (29%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (79%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (80%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (92%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (95%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (68%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (70%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (100%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (81%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (87%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (71%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (20%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (58%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (56%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (62%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (60%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (77%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (35%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (59%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (69%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (66%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (89%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (79%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (70%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (89%)"/>
+        <value type="string" value="conexão de rede wi-fi “planeta net - apartamentos” ativa: planeta net - apartamentos (75%)"/>
+        <value type="string" value="conexão de rede wi-fi “planeta net - apartamentos” ativa: planeta net - apartamentos (62%)"/>
+        <value type="string" value="conexão de rede wi-fi “planeta net - apartamentos” ativa: planeta net - apartamentos (54%)"/>
+        <value type="string" value="conexão de rede wi-fi “planeta net - apartamentos” ativa: planeta net - apartamentos (67%)"/>
+        <value type="string" value="conexão de rede wi-fi “planeta net - apartamentos” ativa: planeta net - apartamentos (57%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (90%)"/>
+        <value type="string" value="conexão de rede wi-fi “loja acor iris” ativa: loja acor iris (69%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (75%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_2g373646” ativa: claro_2g373646 (100%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos sb/fpo” ativa: alunos sb/fpo (67%)"/>
+        <value type="string" value="conexão de rede wi-fi “planeta net - apartamentos” ativa: planeta net - apartamentos (59%)"/>
+        <value type="string" value="conexão de rede wi-fi “planeta net - apartamentos” ativa: planeta net - apartamentos (70%)"/>
+        <value type="string" value="conexão de rede wi-fi “planeta net - apartamentos” ativa: planeta net - apartamentos (60%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos sb/fpo” ativa: alunos sb/fpo (45%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos sb/fpo” ativa: alunos sb/fpo (79%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (55%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (65%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (85%)"/>
+        <value type="string" value="conexão de rede wi-fi “quadra sb/fpo” ativa: quadra sb/fpo (67%)"/>
+        <value type="string" value="conexão de rede wi-fi “quadra sb/fpo” ativa: quadra sb/fpo (80%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (74%)"/>
+        <value type="string" value="conexão de rede wi-fi “quadra sb/fpo” ativa: quadra sb/fpo (62%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (89%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos sb/fpo” ativa: alunos sb/fpo (25%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-434193” ativa: brisa-434193 (87%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos sb/fpo” ativa: alunos sb/fpo (75%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (29%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (72%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (90%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (94%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (97%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (75%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (66%)"/>
+        <value type="string" value="configurando conexão de rede wi-fi “alunos fpo”…"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (84%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (70%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (48%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (25%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (60%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (59%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (53%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (49%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (45%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (62%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (75%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos sb/fpo” ativa: alunos sb/fpo (52%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos sb/fpo” ativa: alunos sb/fpo (49%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (70%)"/>
+        <value type="string" value="conexão de rede wi-fi “brisa-3741738” ativa: brisa-3741738 (89%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos sb/fpo” ativa: alunos sb/fpo (32%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (90%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos sb/fpo” ativa: alunos sb/fpo (40%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos sb/fpo” ativa: alunos sb/fpo (82%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos sb/fpo” ativa: alunos sb/fpo (69%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (34%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (74%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (69%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (68%)"/>
+        <value type="string" value="requisitando um endereço de rede wi-fi para “brisa-3741738”…"/>
+        <value type="string" value="requisitando um endereço de rede wi-fi para “claro_5g373646”…"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (50%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (52%)"/>
+        <value type="string" value="miniaplicativo gerenciador de redes"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (37%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (55%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (54%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (34%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (57%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (40%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (35%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (47%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (44%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (51%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (42%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (45%)"/>
+        <value type="string" value="conexão de rede wi-fi “claro_5g373646” ativa: claro_5g373646 (39%)"/>
+        <value type="string" value="nenhuma conexão de rede"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (89%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (77%)"/>
+        <value type="string" value="requisitando um endereço de rede wi-fi para “alunos fpo”…"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (60%)"/>
+        <value type="string" value="conexão de rede wi-fi “vivofibra-20f1” ativa: vivofibra-20f1 (89%)"/>
+        <value type="string" value="configurando conexão de rede wi-fi “alunos sb/fpo”…"/>
+        <value type="string" value="requisitando um endereço de rede wi-fi para “alunos sb/fpo”…"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (32%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (58%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (59%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (65%)"/>
+        <value type="string" value="conexão de rede wi-fi “carlito pizzas ” ativa: carlito pizzas  (66%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (35%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (63%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (64%)"/>
+        <value type="string" value="conexão de rede wi-fi “alunos fpo” ativa: alunos fpo (67%)"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="vlc"/>
+        <value type="string" value="Stremio"/>
+        <value type="string" value="org.nicotine_plus.Nicotine"/>
+        <value type="string" value="SimpleScreenRecorder"/>
+        <value type="string" value="qBittorrent"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="blueman"/>
+      </property>
+      <property name="hidden-items" type="array">
+      </property>
+      <property name="hidden-legacy-items" type="array">
+      </property>
+      <property name="square-icons" type="bool" value="false"/>
+      <property name="hide-new-items" type="bool" value="false"/>
+      <property name="single-row" type="bool" value="false"/>
+      <property name="icon-size" type="int" value="0"/>
+      <property name="symbolic-icons" type="bool" value="false"/>
+      <property name="menu-is-primary" type="bool" value="false"/>
+    </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-8" type="string" value="docklike"/>
+    <property name="plugin-1" type="string" value="power-manager-plugin"/>
+  </property>
+</channel>

@@ -1,0 +1,62 @@
+1366x768 screen: Window-Maximized=true
+MenuBar=Disabled
+
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[General]
+LastTargetDir[$e]=file:$HOME/Desktop
+LastUsedVersion=210800
+SideBarPage=operations
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=32
+
+[MainWindow]
+1366x768 screen: Height=746
+1366x768 screen: Width=1366
+1366x768 screen: Window-Maximized=true
+1366x768 screen: XPosition=0
+1366x768 screen: YPosition=22
+LVDS-1=LVDS-1
+LVDS-1 XPosition 1366x768 LVDS-1=312
+LVDS-1 YPosition 1366x768 LVDS-1=151
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+
+[MainWindow][Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[Recent Files]
+File1[$e]=$HOME/Desktop/GT75ly0WMAA0XoO.jpeg
+File10[$e]=$HOME/Desktop/viloes.png
+File2[$e]=$HOME/Desktop/prumada.jpg
+File3[$e]=$HOME/Desktop/Sem título.png
+File4[$e]=$HOME/Imagens/Avulsas/Wallpaper3.png
+File5[$e]=$HOME/Desktop/Captura de imagem_20240914_105106.png
+File6[$e]=$HOME/2024-09-17-144609_hyprshot.png
+File7[$e]=$HOME/2024-09-17-144909_hyprshot.png
+File8[$e]=$HOME/2024-09-17-144654_hyprshot.png
+File9[$e]=$HOME/Downloads/Telegram Desktop/Screenshot_20240919-085854.png
+Name1[$e]=GT75ly0WMAA0XoO.jpeg
+Name10[$e]=viloes.png
+Name2[$e]=prumada.jpg
+Name3[$e]=Sem título.png
+Name4[$e]=Wallpaper3.png
+Name5[$e]=Captura de imagem_20240914_105106.png
+Name6[$e]=2024-09-17-144609_hyprshot.png
+Name7[$e]=2024-09-17-144909_hyprshot.png
+Name8[$e]=2024-09-17-144654_hyprshot.png
+Name9[$e]=Screenshot_20240919-085854.png
+
+[SideBar]
+InformationSplitterSizes=228,247
+SideBarSplitterSizes=249,1116
+
+[ThumbnailView]
+ThumbnailSize=248
+
+[Toolbar mainToolBar]
+ToolButtonStyle=IconOnly

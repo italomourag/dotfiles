@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Name=WhatsApp Web
+Comment=Aplicativo Web
+Exec=chromium --app="http://web.whatsapp.com" --class=WebApp-WhatsAppWeb5254 --name=WebApp-WhatsAppWeb5254 --user-data-dir=/home/ito/.local/share/ice/profiles/WhatsAppWeb5254 --profile-directory=Default
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=whatsapp
+Categories=GTK;WebApps;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=WebApp-WhatsAppWeb5254
+StartupNotify=true
+X-WebApp-Browser=Chromium
+X-WebApp-URL=http://web.whatsapp.com
+X-WebApp-CustomParameters=--profile-directory=Default
+X-WebApp-Navbar=false
+X-WebApp-PrivateWindow=false
+X-WebApp-Isolated=true

@@ -1,0 +1,11 @@
+[user]
+indicatorColorFromTheme=false
+forceIconSize=true
+iconSize=18
+indicatorStyle=0
+indicatorOrientation=1
+indicatorColor=rgb(68,68,68)
+inactiveColor=rgb(82,148,226)
+pinned=kitty;thunar;chromium;spotify;WebApp-WhatsAppWeb5254;org.telegram.desktop;
+noWindowsListIfSingle=true
+middleButtonBehavior=2

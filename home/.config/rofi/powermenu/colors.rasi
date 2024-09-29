@@ -1,0 +1,12 @@
+/**
+ * Autor : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ *
+ * Esquema de cores
+ *
+ * arc
+ * onedark
+ *
+/* Importar cores */
+
+@import "~/.config/rofi/powermenu/onedark.rasi"

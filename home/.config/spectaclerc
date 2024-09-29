@@ -1,0 +1,14 @@
+[GuiConfig]
+captureMode=4
+
+[ImageSave]
+imageCompressionQuality=100
+imageSaveLocation=file:///home/ito/Imagens
+lastImageSaveAsLocation=file:///home/ito/Desktop/Captura de imagem_20240917_150342.png
+lastImageSaveLocation=file:///home/ito/Desktop/Captura de imagem_20240917_150342.png
+translatedScreenshotsFolder=Capturas de tela
+
+[VideoSave]
+preferredVideoFormat=0
+translatedScreencastsFolder=Capturar  video
+videoSaveLocation=file:///home/ito/Videos

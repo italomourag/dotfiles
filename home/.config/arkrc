@@ -1,0 +1,20 @@
+MenuBar=Disabled
+StatusBar=Disabled
+
+[ExtractDialog]
+DirHistory[$e]=$HOME/Downloads/,$HOME/Desktop/,$HOME/Downloads/The Lord of the Rings The Rings of Power S02E03 The Eagle and the Sceptre 1080p AMZN WEB-DL DDP5 1 Atmos H 264-FLUX[TGx]/,$HOME/Downloads/The Lord of the Rings The Rings of Power S02E02 Where the Stars are Strange 1080p AMZN WEB-DL DDP5 1 Atmos H 264-FLUX[TGx]/,$HOME/.local/share/vlc/skins2/Skin/,$HOME/.local/share/vlc/skins2/,$HOME/Downloads/vlc___slim_beam___white_skin_by_kryptonsyt_d78exdn/,$HOME/Documentos/Textos/Teatro/,$HOME/Downloads/Annie Hall (1977) [1080p]/
+
+[General]
+LockSidebar=false
+ShowSidebar=false
+
+[MainWindow]
+MenuBar=Disabled
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+
+[Preview]
+limitPreviewFileSize=false
+
+[Viewer]
+ToolBarsMovable=Disabled

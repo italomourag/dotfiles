@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=FL Studio 20
+Exec=env WINEPREFIX="/home/ito/.wine" wine C:\\\\users\\\\ito\\\\AppData\\\\Roaming\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Image-Line\\\\FL\\ Studio\\ 20.lnk
+Type=Application
+StartupNotify=true
+Path=/home/ito/.wine/dosdevices/c:/Program Files (x86)/Image-Line/FL Studio 20
+Icon=/usr/share/pixmaps/Fl_studio_logo.png
+StartupWMClass=fl64.exe
+Type=Application
+Categories=AudioVideo;Audio;AudioVideoEditing;
+Comment=
+Terminal=false

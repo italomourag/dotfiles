@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Não edite este arquivo, ele será sobrescrito na instalação.
+        Copie o arquivo para $HOME/.config/openbox/ em vez disso. -->
+<openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <resistance>
+    <strength>10</strength>
+    <screen_edge_strength>20</screen_edge_strength>
+  </resistance>
+  <focus>
+    <focusNew>yes</focusNew>
+    <!-- sempre tente focar novas janelas quando elas aparecerem. outras regras se
+       aplicam -->
+    <followMouse>no</followMouse>
+    <!-- mover o foco para uma janela quando você mover o mouse para dentro dela -->
+    <focusLast>yes</focusLast>
+    <!-- focar a última janela usada ao mudar de desktops, em vez daquela que está
+       sob o ponteiro do mouse. quando followMouse está habilitado -->
+    <underMouse>no</underMouse>
+    <!-- mover o foco para a janela sob o mouse, mesmo quando o mouse não está se movendo -->
+    <focusDelay>200</focusDelay>
+    <!-- quando followMouse está habilitado, o mouse deve estar dentro da janela por
+       essa quantidade de milissegundos (1000 = 1 seg) antes de mover o foco para ela -->
+    <raiseOnFocus>no</raiseOnFocus>
+    <!-- quando followMouse está habilitado, e uma janela recebe o foco movendo o
+       mouse para dentro dela, também eleva a janela -->
+  </focus>
+  <placement>
+    <policy>Smart</policy>
+    <!-- 'Smart' ou 'UnderMouse' -->
+    <center>yes</center>
+    <!-- se deve posicionar as janelas no centro da área livre encontrada ou
+       no canto superior esquerdo -->
+    <monitor>Primary</monitor>
+    <!-- com posicionamento Smart em um sistema com vários monitores, tente posicionar novas janelas em:
+       'Any' - qualquer monitor, 'Mouse' - onde o mouse está, 'Active' - onde
+       a janela ativa está, 'Primary' - apenas no monitor principal -->
+    <primaryMonitor>1</primaryMonitor>
+    <!-- O monitor onde o Openbox deve colocar diálogos pop-up, como o
+       pop-up de ciclo de foco ou o pop-up de troca de desktop. Pode ser um índice
+       a partir de 1, especificando um monitor em particular. Ou pode ser uma das
+       seguintes opções: 'Mouse' - onde o mouse está, ou
+                  'Active' - onde a janela ativa está -->
+  </placement>
+  <theme>
+    <name>Materia Light</name>
+    <titleLayout>LIMC</titleLayout>
+    <!--
+      os caracteres disponíveis são NDSLIMC, cada um pode ocorrer no máximo uma vez.
+      N: ícone da janela
+      L: rótulo da janela (também conhecido como título).
+      I: minimizar
+      M: maximizar
+      C: fechar
+      S: sombrear (enrolar/desenrolar)
+      D: onipresente (em todas as áreas de trabalho).
+  -->
+    <keepBorder>no</keepBorder>
+    <animateIconify>no</animateIconify>
+    <font place="ActiveWindow">
+      <name>Roboto</name>
+      <size>9</size>
+      <!-- tamanho da fonte em pontos -->
+      <weight>Bold</weight>
+      <!-- 'bold' ou 'normal' -->
+      <slant>Normal</slant>
+      <!-- 'italic' ou 'normal' -->
+    </font>
+    <font place="InactiveWindow">
+      <name>Roboto</name>
+      <size>9</size>
+      <!-- tamanho da fonte em pontos -->
+      <weight>Bold</weight>
+      <!-- 'bold' ou 'normal' -->
+      <slant>Normal</slant>
+      <!-- 'italic' ou 'normal' -->
+    </font>
+    <font place="MenuHeader">
+      <name>Roboto Medium</name>
+      <size>9</size>
+      <!-- tamanho da fonte em pontos -->
+      <weight>Normal</weight>
+      <!-- 'bold' ou 'normal' -->
+      <slant>Normal</slant>
+      <!-- 'italic' ou 'normal' -->
+    </font>
+    <font place="MenuItem">
+      <name>Roboto</name>
+      <size>9</size>
+      <!-- tamanho da fonte em pontos -->
+      <weight>Bold</weight>
+      <!-- 'bold' ou 'normal' -->
+      <slant>Normal</slant>
+      <!-- 'italic' ou 'normal' -->
+    </font>
+    <font place="ActiveOnScreenDisplay">
+      <name>Roboto</name>
+      <size>9</size>
+      <!-- tamanho da fonte em pontos -->
+      <weight>Bold</weight>
+      <!-- 'bold' ou 'normal' -->
+      <slant>Normal</slant>
+      <!-- 'italic' ou 'normal' -->
+    </font>
+    <font place="InactiveOnScreenDisplay">
+      <name>Roboto</name>
+      <size>9</size>
+      <!-- tamanho da fonte em pontos -->
+      <weight>Bold</weight>
+      <!-- 'bold' ou 'normal' -->
+      <slant>Normal</slant>
+      <!-- 'italic' ou 'normal' -->
+    </font>
+  </theme>
+  <desktops>
+    <!-- essas configurações são usadas apenas na inicialização, paginadores permitem que você as altere
+       durante uma sessão
+
+       esses são os valores padrão a serem usados quando outros não estiverem definidos
+       por outros aplicativos, ou salvos na sua sessão
+
+       use o obconf se você quiser alterar essas configurações sem precisar fazer logoff
+       e logar novamente -->
+    <number>1</number>
+    <firstdesk>1</firstdesk>
+    <names>
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
+    </names>
+    <popupTime>875</popupTime>
+    <!-- O número de milissegundos para mostrar o popup ao trocar
+         de desktops. Defina isso como 0 para desativar o popup. -->
+  </desktops>
+  <resize>
+    <drawContents>yes</drawContents>
+    <popupShow>Nonpixel</popupShow>
+    <!-- 'Always', 'Never' ou 'Nonpixel' (xterms e similares) -->
+    <popupPosition>Center</popupPosition>
+    <!-- 'Center', 'Top' ou 'Fixed' -->
+    <popupFixedPosition>
+      <!-- esses valores são usados se popupPosition estiver definido como 'Fixed' -->
+      <x>10</x>
+      <!-- número positivo para a distância da borda esquerda, número negativo para
+           a distância da borda direita, ou 'Center' -->
+      <y>10</y>
+      <!-- número positivo para a distância da borda superior, número negativo para
+           a distância da borda inferior, ou 'Center' -->
+    </popupFixedPosition>
+  </resize>
+  <!-- Você pode reservar uma parte da sua tela onde as janelas não cobrirão quando
+       forem maximizadas, ou quando forem inicialmente posicionadas.
+       Muitos programas reservam espaço automaticamente, mas você pode usar isso em outros
+       casos. -->
+  <margins>
+    <top>0</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
+  </margins>
+  <dock>
+    <position>TopLeft</position>
+    <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
+    <floatingX>0</floatingX>
+    <floatingY>0</floatingY>
+    <noStrut>no</noStrut>
+    <stacking>Above</stacking>
+    <!-- 'Above', 'Normal' ou 'Below' -->
+    <direction>Vertical</direction>
+    <!-- 'Vertical' ou 'Horizontal' -->
+    <autoHide>no</autoHide>
+    <hideDelay>300</hideDelay>
+    <!-- em milissegundos (1000 = 1 segundo) -->
+    <showDelay>300</showDelay>
+    <!-- em milissegundos (1000 = 1 segundo) -->
+    <moveButton>Middle</moveButton>
+    <!-- 'Left', 'Middle', 'Right' -->
+  </dock>
+  <keyboard>
+    <chainQuitKey>C-g</chainQuitKey>
+    <!-- Atalhos de teclado para alternância de desktops -->
+    <keybind key="C-A-Left">
+      <action name="GoToDesktop">
+        <to>left</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="C-A-Right">
+      <action name="GoToDesktop">
+        <to>right</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="C-A-Up">
+      <action name="GoToDesktop">
+        <to>up</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="C-A-Down">
+      <action name="GoToDesktop">
+        <to>down</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Left">
+      <action name="SendToDesktop">
+        <to>left</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Right">
+      <action name="SendToDesktop">
+        <to>right</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Up">
+      <action name="SendToDesktop">
+        <to>up</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Down">
+      <action name="SendToDesktop">
+        <to>down</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-F1">
+      <action name="GoToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="W-F2">
+      <action name="GoToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="W-F3">
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="W-F4">
+      <action name="GoToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    <keybind key="W-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+    <!-- Atalhos de teclados para janelas -->
+    <keybind key="A-F4">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="A-Escape">
+      <action name="Lower"/>
+      <action name="FocusToBottom"/>
+      <action name="Unfocus"/>
+    </keybind>
+    <keybind key="A-space">
+      <action name="ShowMenu">
+        <menu>client-menu</menu>
+      </action>
+    </keybind>
+    <!-- Atalhos de teclados para troca de janelas -->
+    <keybind key="A-Tab">
+      <action name="NextWindow">
+        <bar>no</bar>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="A-S-Tab">
+      <action name="PreviousWindow">
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="C-A-Tab">
+      <action name="NextWindow">
+        <panels>yes</panels>
+        <desktop>yes</desktop>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <!-- Atalhos de teclado para alternância de janelas com as teclas de seta -->
+    <keybind key="W-S-Right">
+      <action name="DirectionalCycleWindows">
+        <direction>right</direction>
+      </action>
+    </keybind>
+    <keybind key="W-S-Left">
+      <action name="DirectionalCycleWindows">
+        <direction>left</direction>
+      </action>
+    </keybind>
+    <keybind key="W-S-Up">
+      <action name="DirectionalCycleWindows">
+        <direction>up</direction>
+      </action>
+    </keybind>
+    <keybind key="W-S-Down">
+      <action name="DirectionalCycleWindows">
+        <direction>down</direction>
+      </action>
+    </keybind>
+    <!-- Atalhos de teclado para executar aplicativos -->
+    <keybind key="W-F4">
+      <action name="Execute">
+        <command>~/.config/rofi/powermenu/powermenu.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-space">
+      <action name="Execute">
+        <command>~/.config/rofi/drun/drun.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>betterlockscreen -l dim</command>
+      </action>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <command>spectacle</command>
+      </action>
+    </keybind>
+    <keybind key="W-e">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Konqueror</name>
+        </startupnotify>
+        <command>kfmclient openProfile filemanagement</command>
+      </action>
+    </keybind>
+    <!-- Atalhos de teclado para brilho -->
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <command>bash ~/.config/dunst/dunstbright.sh 10%+</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <command>bash ~/.config/dunst/dunstbright.sh 10%-</command>
+      </action>
+    </keybind>
+    <!-- Atalhos de teclado para volume -->
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>~/.config/dunst/dunstvolume.sh -i</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>~/.config/dunst/dunstvolume.sh -d</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>pamixer -t</command>
+      </action>
+    </keybind>
+  </keyboard>
+  <mouse>
+    <dragThreshold>1</dragThreshold>
+    <!-- número de pixels que o mouse deve mover antes que um arraste comece -->
+    <doubleClickTime>500</doubleClickTime>
+    <!-- em milissegundos (1000 = 1 segundo) -->
+    <screenEdgeWarpTime>0</screenEdgeWarpTime>
+    <!-- Tempo antes de mudar de área de trabalho quando o ponteiro toca a borda da
+       tela enquanto move uma janela, em milissegundos (1000 = 1 segundo).
+       Defina isso como 0 para desativar a movimentação -->
+    <screenEdgeWarpMouse>false</screenEdgeWarpMouse>
+    <!-- Defina isso como TRUE para mover o ponteiro do mouse pela área de trabalho ao
+       trocar devido ao contato com a borda da tela -->
+    <context name="Frame">
+      <mousebind button="A-Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="A-Left" action="Click">
+        <action name="Unshade"/>
+      </mousebind>
+      <mousebind button="A-Left" action="Drag">
+        <action name="Move"/>
+      </mousebind>
+      <mousebind button="A-Right" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </mousebind>
+      <mousebind button="A-Right" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+      <mousebind button="A-Middle" action="Press">
+        <action name="Lower"/>
+        <action name="FocusToBottom"/>
+        <action name="Unfocus"/>
+      </mousebind>
+      <mousebind button="A-Up" action="Click">
+        <action name="GoToDesktop">
+          <to>previous</to>
+        </action>
+      </mousebind>
+      <mousebind button="A-Down" action="Click">
+        <action name="GoToDesktop">
+          <to>next</to>
+        </action>
+      </mousebind>
+      <mousebind button="C-A-Up" action="Click">
+        <action name="GoToDesktop">
+          <to>previous</to>
+        </action>
+      </mousebind>
+      <mousebind button="C-A-Down" action="Click">
+        <action name="GoToDesktop">
+          <to>next</to>
+        </action>
+      </mousebind>
+      <mousebind button="A-S-Up" action="Click">
+        <action name="SendToDesktop">
+          <to>previous</to>
+        </action>
+      </mousebind>
+      <mousebind button="A-S-Down" action="Click">
+        <action name="SendToDesktop">
+          <to>next</to>
+        </action>
+      </mousebind>
+    </context>
+    <context name="Titlebar">
+      <mousebind button="Left" action="Drag">
+        <action name="Move"/>
+      </mousebind>
+      <mousebind button="Left" action="DoubleClick">
+        <action name="ToggleMaximize"/>
+      </mousebind>
+      <mousebind button="Up" action="Click">
+        <action name="if">
+          <shaded>no</shaded>
+          <then>
+            <action name="Shade"/>
+            <action name="FocusToBottom"/>
+            <action name="Unfocus"/>
+            <action name="Lower"/>
+          </then>
+        </action>
+      </mousebind>
+      <mousebind button="Down" action="Click">
+        <action name="if">
+          <shaded>yes</shaded>
+          <then>
+            <action name="Unshade"/>
+            <action name="Raise"/>
+          </then>
+        </action>
+      </mousebind>
+    </context>
+    <context name="Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner">
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </mousebind>
+      <mousebind button="Middle" action="Press">
+        <action name="Lower"/>
+        <action name="FocusToBottom"/>
+        <action name="Unfocus"/>
+      </mousebind>
+      <mousebind button="Right" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="ShowMenu">
+          <menu>client-menu</menu>
+        </action>
+      </mousebind>
+    </context>
+    <context name="Top">
+      <mousebind button="Left" action="Drag">
+        <action name="Resize">
+          <edge>top</edge>
+        </action>
+      </mousebind>
+    </context>
+    <context name="Left">
+      <mousebind button="Left" action="Drag">
+        <action name="Resize">
+          <edge>left</edge>
+        </action>
+      </mousebind>
+    </context>
+    <context name="Right">
+      <mousebind button="Left" action="Drag">
+        <action name="Resize">
+          <edge>right</edge>
+        </action>
+      </mousebind>
+    </context>
+    <context name="Bottom">
+      <mousebind button="Left" action="Drag">
+        <action name="Resize">
+          <edge>bottom</edge>
+        </action>
+      </mousebind>
+      <mousebind button="Right" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="ShowMenu">
+          <menu>client-menu</menu>
+        </action>
+      </mousebind>
+    </context>
+    <context name="TRCorner BRCorner TLCorner BLCorner">
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </mousebind>
+      <mousebind button="Left" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+    </context>
+    <context name="Client">
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="Middle" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="Right" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+    </context>
+    <context name="Icon">
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+        <action name="ShowMenu">
+          <menu>client-menu</menu>
+        </action>
+      </mousebind>
+      <mousebind button="Right" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="ShowMenu">
+          <menu>client-menu</menu>
+        </action>
+      </mousebind>
+    </context>
+    <context name="AllDesktops">
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </mousebind>
+      <mousebind button="Left" action="Click">
+        <action name="ToggleOmnipresent"/>
+      </mousebind>
+    </context>
+    <context name="Shade">
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="Left" action="Click">
+        <action name="ToggleShade"/>
+      </mousebind>
+    </context>
+    <context name="Iconify">
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="Left" action="Click">
+        <action name="Iconify"/>
+      </mousebind>
+    </context>
+    <context name="Maximize">
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </mousebind>
+      <mousebind button="Middle" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </mousebind>
+      <mousebind button="Right" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </mousebind>
+      <mousebind button="Left" action="Click">
+        <action name="ToggleMaximize"/>
+      </mousebind>
+      <mousebind button="Middle" action="Click">
+        <action name="ToggleMaximize">
+          <direction>vertical</direction>
+        </action>
+      </mousebind>
+      <mousebind button="Right" action="Click">
+        <action name="ToggleMaximize">
+          <direction>horizontal</direction>
+        </action>
+      </mousebind>
+    </context>
+    <context name="Close">
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </mousebind>
+      <mousebind button="Left" action="Click">
+        <action name="Close"/>
+      </mousebind>
+    </context>
+    <context name="Desktop">
+      <mousebind button="Up" action="Click">
+        <action name="GoToDesktop">
+          <to>previous</to>
+        </action>
+      </mousebind>
+      <mousebind button="Down" action="Click">
+        <action name="GoToDesktop">
+          <to>next</to>
+        </action>
+      </mousebind>
+      <mousebind button="A-Up" action="Click">
+        <action name="GoToDesktop">
+          <to>previous</to>
+        </action>
+      </mousebind>
+      <mousebind button="A-Down" action="Click">
+        <action name="GoToDesktop">
+          <to>next</to>
+        </action>
+      </mousebind>
+      <mousebind button="C-A-Up" action="Click">
+        <action name="GoToDesktop">
+          <to>previous</to>
+        </action>
+      </mousebind>
+      <mousebind button="C-A-Down" action="Click">
+        <action name="GoToDesktop">
+          <to>next</to>
+        </action>
+      </mousebind>
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="Right" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+    </context>
+    <context name="Root">
+      <!-- Menus -->
+      <mousebind button="Middle" action="Press">
+        <action name="ShowMenu">
+          <menu>client-list-combined-menu</menu>
+        </action>
+      </mousebind>
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu">
+          <menu>root-menu</menu>
+        </action>
+      </mousebind>
+    </context>
+    <context name="MoveResize">
+      <mousebind button="Up" action="Click">
+        <action name="GoToDesktop">
+          <to>previous</to>
+        </action>
+      </mousebind>
+      <mousebind button="Down" action="Click">
+        <action name="GoToDesktop">
+          <to>next</to>
+        </action>
+      </mousebind>
+      <mousebind button="A-Up" action="Click">
+        <action name="GoToDesktop">
+          <to>previous</to>
+        </action>
+      </mousebind>
+      <mousebind button="A-Down" action="Click">
+        <action name="GoToDesktop">
+          <to>next</to>
+        </action>
+      </mousebind>
+    </context>
+  </mouse>
+  <menu>
+    <!-- Você pode especificar mais de um arquivo de menu aqui e todos serão carregados,
+       apenas não faça os IDs do menu entrarem em conflito ou, bem, será meio sem sentido -->
+    <!-- arquivo de menu padrão (ou personalizado em $HOME/.config/openbox/) -->
+    <file>menu.xml</file>
+    <hideDelay>200</hideDelay>
+    <!-- se um pressionar-soltar durar mais do que esta configuração (em milissegundos), o
+       menu será ocultado novamente -->
+    <middle>no</middle>
+    <!-- centralizar submenus verticalmente em relação à entrada pai -->
+    <submenuShowDelay>100</submenuShowDelay>
+    <!-- tempo de atraso antes de mostrar um submenu após passar o mouse sobre a entrada
+       pai.
+       se este for um valor negativo, então o atraso é infinito e o
+       submenu não será mostrado até que seja clicado -->
+    <submenuHideDelay>400</submenuHideDelay>
+    <!-- tempo de atraso antes de ocultar um submenu ao selecionar outra
+       entrada no menu pai.
+       se este for um valor negativo, então o atraso é infinito e o
+       submenu não será ocultado até que um submenu diferente seja aberto -->
+    <showIcons>yes</showIcons>
+    <!-- controla se os ícones aparecem no menu de lista de clientes (combinado) -->
+    <manageDesktops>yes</manageDesktops>
+    <!-- mostrar a seção de gerenciar áreas de trabalho no menu de lista de clientes (combinado) -->
+  </menu>
+  <applications>
+    <!--
+  # este é um exemplo com comentários ao longo. use-os para criar suas
+  # próprias regras, mas sem os comentários, é claro.
+  <application name="primeiro elemento da propriedade WM_CLASS da janela (veja xprop)"
+              class="segundo elemento da propriedade WM_CLASS da janela (veja xprop)"
+               role="a propriedade WM_WINDOW_ROLE da janela (veja xprop)">
+  # o nome ou a classe podem ser definidos, ou ambos. isso é usado para combinar
+  # janelas quando aparecem. a role também pode ser definido opcionalmente, para
+  # restringir ainda mais suas combinações.
+  # o nome, classe e role usam correspondência simples de curingas, como aquelas
+  # usadas por um shell. você pode usar * para combinar quaisquer caracteres e ? para
+  # combinar qualquer caractere único.
+  # quando várias regras correspondem a uma janela, todas serão aplicadas, na
+  # ordem em que aparecem nesta lista
+    # cada elemento pode ser omitido ou definido como 'default' para especificar que não
+    # deve mudar aquele atributo da janela
+    <decor>yes</decor>
+    # habilitar ou desabilitar decorações de janela
+    <shade>no</shade>
+    # fazer a janela ser minimizada quando aparecer, ou não
+    <position>
+      # a posição é usada apenas se tanto uma coordenada x quanto uma coordenada y forem fornecidas
+      # (e não definidas como 'default')
+      <x>center</x>
+      # um número como 50, ou 'center' para centralizar na tela. use um número negativo
+      # para começar a partir da direita (ou em baixo para <y>), ou seja, -50 é 50 pixels a partir da
+      # borda direita (ou inferior).
+      <y>200</y>
+      <monitor>1</monitor>
+      # especifica o monitor em uma configuração xinerama.
+      # 1 é a primeira tela, ou 'mouse' para onde o mouse está
+    </position>
+    <focus>yes</focus>
+    # se a janela deve tentar receber foco quando aparece. se isso estiver definido
+    # como sim, não garante que a janela receberá foco. algumas
+    # restrições podem se aplicar, mas o Openbox tentará
+    <desktop>1</desktop>
+    # 1 é a primeira área de trabalho, 'all' para todas as áreas de trabalho
+    <layer>normal</layer>
+    # 'above', 'normal' ou 'below'
+    <iconic>no</iconic>
+    # fazer a janela ser minimizada quando aparecer, ou não
+    <skip_pager>no</skip_pager>
+    # pede para não ser mostrada em pagers
+    <skip_taskbar>no</skip_taskbar>
+    # pede para não ser mostrada em barras de tarefas. ações de troca de janelas também
+    # pularão essas janelas
+    <fullscreen>yes</fullscreen>
+    # fazer a janela ficar em modo de tela cheia quando aparecer
+    <maximized>true</maximized>
+    # 'Horizontal', 'Vertical' ou booleano (yes/no)
+  </application>
+  # fim do exemplo
+-->
+    <application class="kitty">
+      <position force="no">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+    <application class="Thunar">
+      <position force="no">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+    <application class="Chromium">
+      <position force="no">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+    <application class="Mousepad">
+      <position force="no">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+  </applications>
+</openbox_config>
