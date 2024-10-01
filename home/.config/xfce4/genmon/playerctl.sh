@@ -7,7 +7,7 @@ status=$(playerctl status 2>/dev/null)
 if [ "$status" = "Playing" ]; then
     artist=$(playerctl metadata artist)
     title=$(playerctl metadata title)
-    echo "<txt>  <span background='#269cb6' foreground='#444444' font_family='Roboto' font_weight='bold'>  ▶️  $artist - $title  </span>  </txt>"
+    echo "<txt>  <span background='#444444' foreground='#e7e8eb' font_family='Roboto' font_weight='bold'>  ▶️  $artist - $title  </span>  </txt>"
     echo "<tool>$artist - $title</tool>"
 elif [ "$status" = "Paused" ]; then
     # Exibe pausa
