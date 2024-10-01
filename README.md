@@ -6,6 +6,8 @@
 
 <img src="https://github.com/italomourag/dotfiles/blob/main/openbox.png" alt="Openbox" width="500"/>
 
+---
+
 <details>
 <summary><b>Programas</b></summary>
 
@@ -117,6 +119,8 @@
 | TTF Nerd Fonts Symbols            | Glifos extras de fontes.                                                     | `ttf-nerd-fonts-symbols`         |
 | TTF Nerd Fonts Symbols Mono       | Glifos extras de fontes. (monospace).                                        | `ttf-nerd-fonts-symbols-mono`    |
 </details>
+
+---
 
 **Repositório oficial**
 ```bash
