@@ -7,7 +7,7 @@
 <img src="https://github.com/italomourag/dotfiles/blob/main/openbox.png" alt="Openbox" width="500"/>
 
 <details>
-**Programas**
+<summary><b>Programas</b></summary>
 
 | **Programa**                      | **Descrição**                                                                | **Pacote**                       |
 |-----------------------------------|------------------------------------------------------------------------------|----------------------------------|
