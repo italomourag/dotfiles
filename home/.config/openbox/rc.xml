@@ -10,7 +10,7 @@
     <focusNew>yes</focusNew>
     <!-- sempre tente focar novas janelas quando elas aparecerem. outras regras se
        aplicam -->
-    <followMouse>no</followMouse>
+    <followMouse>yes</followMouse>
     <!-- mover o foco para uma janela quando você mover o mouse para dentro dela -->
     <focusLast>yes</focusLast>
     <!-- focar a última janela usada ao mudar de desktops, em vez daquela que está
@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>Materia Light</name>
-    <titleLayout>LIMC</titleLayout>
+    <titleLayout>SLIMC</titleLayout>
     <!--
       os caracteres disponíveis são NDSLIMC, cada um pode ocorrer no máximo uma vez.
       N: ícone da janela
@@ -128,7 +128,7 @@
       <name>3</name>
       <name>4</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>0</popupTime>
     <!-- O número de milissegundos para mostrar o popup ao trocar
          de desktops. Defina isso como 0 para desativar o popup. -->
   </desktops>
