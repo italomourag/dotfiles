@@ -10,7 +10,7 @@
     <focusNew>yes</focusNew>
     <!-- sempre tente focar novas janelas quando elas aparecerem. outras regras se
        aplicam -->
-    <followMouse>yes</followMouse>
+    <followMouse>no</followMouse>
     <!-- mover o foco para uma janela quando você mover o mouse para dentro dela -->
     <focusLast>yes</focusLast>
     <!-- focar a última janela usada ao mudar de desktops, em vez daquela que está
