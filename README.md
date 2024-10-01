@@ -6,6 +6,9 @@
 
 <img src="https://github.com/italomourag/dotfiles/blob/main/openbox.png" alt="Openbox" width="500"/>
 
+<details>
+**Programas**
+
 | **Programa**                      | **Descrição**                                                                | **Pacote**                       |
 |-----------------------------------|------------------------------------------------------------------------------|----------------------------------|
 | Android File Transfer             | Transferência de arquivos entre Android e Linux.                             | `android-file-transfer`          |
@@ -113,6 +116,7 @@
 | TTF Roboto Mono Nerd              | Fonte Roboto Mono com suporte a Nerd Fonts.                                  | `ttf-roboto-mono-nerd`           |
 | TTF Nerd Fonts Symbols            | Glifos extras de fontes.                                                     | `ttf-nerd-fonts-symbols`         |
 | TTF Nerd Fonts Symbols Mono       | Glifos extras de fontes. (monospace).                                        | `ttf-nerd-fonts-symbols-mono`    |
+</details>
 
 **Repositório oficial**
 ```bash
