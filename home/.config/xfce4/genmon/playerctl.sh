@@ -1,20 +1,18 @@
 #!/bin/bash
 
-# Verifica o status do player (se está tocando ou pausado)
-status=$(playerctl status 2>/dev/null)
+status=$(playerctl --ignore-player=chromium,firefox status 2>/dev/null)
 
-# Se estiver tocando, exibe a música e o artista
 if [ "$status" = "Playing" ]; then
-    artist=$(playerctl metadata artist)
-    title=$(playerctl metadata title)
+    artist=$(playerctl --ignore-player=chromium,firefox metadata artist)
+    title=$(playerctl --ignore-player=chromium,firefox metadata title)
+    # Play
     echo "<txt>  <span background='#444444' foreground='#e7e8eb' font_family='Roboto' font_weight='bold'>  ▶️  $artist - $title  </span></txt>"
     echo "<tool>$artist - $title</tool>"
 elif [ "$status" = "Paused" ]; then
-    # Exibe pausa
-    echo "<txt>  <span background='#444444' foreground='#e7e8eb' font_family='Roboto' font_weight='bold'>  ⏸️  </span>  </txt>"
+    # Pausa
+    echo "<txt>  <span background='#444444' foreground='#e7e8eb' font_family='Roboto' font_weight='bold'>  ⏸️  </span></txt>"
     echo "<tool>Pausado</tool>"
 else
-    # Exibe ícone de stop
+    # Stop
     echo "<txt><span background='#444444' foreground='#e7e8eb' font_family='Roboto' font_weight='bold'></span></txt>"
-    echo "<tool>Nenhuma música tocando</tool>"
 fi
