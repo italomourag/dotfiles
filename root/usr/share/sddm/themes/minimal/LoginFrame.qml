@@ -95,8 +95,8 @@ Item {
             TextInput {
                 id: passwdInput
                 anchors.fill: parent
-                anchors.leftMargin: 8
-                anchors.rightMargin: 8 + 36
+                anchors.leftMargin: 0
+                anchors.rightMargin: 0
                 clip: true
                 focus: true
                 color: textColor
@@ -105,6 +105,7 @@ Item {
                 selectionColor: "#a8d6ec"
                 echoMode: TextInput.Password
                 verticalAlignment: TextInput.AlignVCenter
+                horizontalAlignment: TextInput.AlignHCenter
                 onFocusChanged: {
                     if (focus) {
                         color = textColor
