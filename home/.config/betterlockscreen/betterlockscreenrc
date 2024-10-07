@@ -4,39 +4,41 @@
 display_on=0
 span_image=false
 lock_timeout=300
-fx_list=(dim blur dimblur pixel dimpixel color)
+fx_list=(blur)
 dim_level=40
-blur_level=1
+blur_level=15
 pixel_scale=10,1000
-solid_color=333333
+solid_color=00000000
 wallpaper_cmd="feh --bg-fill"
 quiet=false
 
 # Tema padrão
 loginbox=00000066
 loginshadow=00000000
-locktext="Digite a senha"
-font="sans-serif"
-ringcolor=ffffffff
+locktext="
+
+ Digite a senha"
+font="Roboto Bold"
+ringcolor=e7e8eb
 insidecolor=00000000
 separatorcolor=00000000
-ringvercolor=ffffffff
+ringvercolor=e7e8eb
 insidevercolor=00000000
-ringwrongcolor=ffffffff
+ringwrongcolor=e7e8eb
 insidewrongcolor=d23c3dff
-timecolor=ffffffff
-time_format="%H:%M:%S"
-greetercolor=ffffffff
+timecolor=444444
+time_format="  %d/%m
+  %H:%M"
+greetercolor=444444
 layoutcolor=ffffffff
-keyhlcolor=d23c3dff
-bshlcolor=d23c3dff
-veriftext="Verificando..."
-verifcolor=ffffffff
-wrongtext="Falha!"
+keyhlcolor=444444
+bshlcolor=444444
+veriftext=""
+verifcolor=444444
+wrongtext=""
 wrongcolor=d23c3dff
 modifcolor=d23c3dff
-bgcolor=267b8d
-
+bgcolor=269cb6a5
 
 #
 # Opções avançadas
