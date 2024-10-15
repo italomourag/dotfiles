@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Hyprshot
+Comment=Take screenshot on Hyprland
+Exec=hyprshot-gui
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Icon=screengrab
+Categories=System;
+Keywords=screenshot;wayland;hyprland;hyprshot;
