@@ -72,7 +72,9 @@ menu, .csd .menu, .csd .dropdown, .csd .context-menu {
 #    background-color: ;
 #    color: ;
 #}
-
 #    calendar {
 #    padding: 2px;
 #}
+
+#* { font-weight: bold; }
+* { font-weight: 500; }
