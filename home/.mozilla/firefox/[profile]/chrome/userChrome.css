@@ -113,38 +113,16 @@ See the above repository for updates as well as full license text. */
   align-items: center !important;
 }
 
-#nav-bar * {
-  justify-content: center !important;
-}
-
 #urlbar {
-  text-align: center !important;
+  text-align: left !important;
 }
 
 #urlbar-input {
   text-align: center !important;
 }
 
-#urlbar-results {
-display: flex !important;
-flex-direction: column !important;
-align-items: center !important;
+/*/
+.urlbarView-title-separator {
+  display: none !important;
 }
-
-.urlbarView-row {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: space-between !important;
-  width: 100% !important;
-  padding: 2px 8px !important;
-}
-
-.urlbarView-title {
-  text-align: left !important;
-  flex-grow: 1 !important;
-}
-
-.urlbarView-url {
-  text-align: right !important;
-  flex-grow: 0 !important;
-}
+/*/
