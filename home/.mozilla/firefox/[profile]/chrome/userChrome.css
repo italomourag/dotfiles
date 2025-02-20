@@ -98,8 +98,8 @@ See the above repository for updates as well as full license text. */
 }
 
 #nav-bar {
-  width: 80% !important;
-  max-width: 1200px !important;
+  width: 50% !important;
+  max-width: 700px !important;
   height: 40px !important;
   min-height: 40px !important;
   margin: auto !important;
