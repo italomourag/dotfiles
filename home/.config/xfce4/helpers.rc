@@ -1,2 +1,4 @@
 TerminalEmulator=terminator
 TerminalEmulatorDismissed=true
+WebBrowser=chromium
+

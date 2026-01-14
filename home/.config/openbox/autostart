@@ -1,27 +1,31 @@
-#Wallpaper
+# Wallpaper
 nitrogen --restore &
 
-#Polkit
+# Polkit
 sleep 1 && /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-#Painel 
-xfce4-panel &
-#tint2 &
-nm-applet &
-blueman-applet &
+~/.config/autostart/notification-daemon.sh &
 
-#Notificação
-dunst &
-
-#Compositor
 picom -b &
 
-#Conky
-sleep 2 && conky &
+# Notificação
+dunst &
 
-#Remover descanso de tela
+# Painel e applets
+blueman-applet &
+nm-applet &
+xfce4-power-manager &
+xfce4-pulseaudio-plugin &
+#volumeicon &
+sleep 1 && xfce4-panel &
+#tint2
+
+# Conky
+conky -c ~/.config/conky/conky_x11.conf &
+
+# Remover descanso de tela
 xset -dpms &
 xset s off &
 
-#Desabilitar beep
-xset b off &
+# Remover beep
+xset -b

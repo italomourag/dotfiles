@@ -176,13 +176,8 @@ window#waybar {
 }
 
 #custom-launcher {
-<<<<<<< HEAD
     color: #444444;
     background-color: transparent;
-=======
-    color: transparent;
-    background-color: #269cb6;
->>>>>>> f67f1c82b66e3724923071c6273b49b60f85bf0b
     border-radius: 0px 0px 24px 0px;
     margin: 0px 0px 0px 0px;
     padding: 0 13px 0 20px;

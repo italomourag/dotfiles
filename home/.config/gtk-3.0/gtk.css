@@ -3,18 +3,22 @@
     -XfcePanelWindow-popdown-delay: 4000;
 }
 
+#XfcePanelWindow, .xfce4-panel {
+    background-color: #b7d5de4
+}
+
 menu, .csd .menu, .csd .dropdown, .csd .context-menu {
     border-radius: 1px;
 }
 
     .xfce4-panel .tasklist .toggle {
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.5);
     color: darkslategrey;
 #    -gtk-icon-shadow: 1px 0px rgba(0, 0, 0, 0.7);
 }
 
 .xfce4-panel#XfcePanelWindow {
-    border-radius: 0px;
+    border-radius: 4px;
 }
 
 #docklike-plugin button {
@@ -23,17 +27,17 @@ menu, .csd .menu, .csd .dropdown, .csd .context-menu {
     margin-right: 4px;
 }
 
-#docklike-plugin .window_count {
-    color: red;
-}
+##docklike-plugin .window_count {
+#    color: red;
+#}
 
-#docklike-plugin .open_group .window_count {
-    color: white;
-}
+##docklike-plugin .open_group .window_count {
+#    color: white;
+#}
 
-#docklike-plugin .active_group .window_count {
-    color: hotpink;
-}
+##docklike-plugin .active_group .window_count {
+#    color: hotpink;
+#}
 
 #xfce4-notification-plugin * {
     -gtk-icon-transform: scale(.8);
@@ -42,7 +46,7 @@ menu, .csd .menu, .csd .dropdown, .csd .context-menu {
 #pulseaudio-button * {
     margin-right: -1px;
     color: darkslategrey;
-    -gtk-icon-transform: scale(.8);
+    -gtk-icon-transform: scale(1.0);
 }
 
 #xfce4-power-manager-plugin* {
@@ -50,7 +54,7 @@ menu, .csd .menu, .csd .dropdown, .csd .context-menu {
     margin-right: -1px;
     color: #444444;
     -gtk-icon-palette: warning #FF0000, success #444444, error #FF0000;
-    -gtk-icon-transform: scale(0.8);
+    -gtk-icon-transform: scale(1.0);
 }
 
 #clock-button {
@@ -65,7 +69,7 @@ menu, .csd .menu, .csd .dropdown, .csd .context-menu {
 # EXPERIMENTAL
 #
 #    .xfce4-panel .tasklist .toggle:checked {
-#     background-color: mediumpurple;
+#     background-color: yellow;
 #}
 #
 #    .xfce4-panel .tasklist .toggle:hover {
@@ -78,3 +82,4 @@ menu, .csd .menu, .csd .dropdown, .csd .context-menu {
 
 #* { font-weight: bold; }
 * { font-weight: 500; }
+@import 'colors.css';

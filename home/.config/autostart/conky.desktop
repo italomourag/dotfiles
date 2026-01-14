@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=conky --config=/home/ito/.config/conky/conky_wayland.conf --pause=5
+Hidden=false
+X-GNOME-Autostart-enabled=true
+Name=Conky
+Comment=Monitor do sistema

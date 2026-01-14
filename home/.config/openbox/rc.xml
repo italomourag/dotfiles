@@ -12,7 +12,7 @@
        aplicam -->
     <followMouse>no</followMouse>
     <!-- mover o foco para uma janela quando você mover o mouse para dentro dela -->
-    <focusLast>yes</focusLast>
+    <focusLast>no</focusLast>
     <!-- focar a última janela usada ao mudar de desktops, em vez daquela que está
        sob o ponteiro do mouse. quando followMouse está habilitado -->
     <underMouse>no</underMouse>
@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>Materia Light</name>
-    <titleLayout>SLIMC</titleLayout>
+    <titleLayout>LIMC</titleLayout>
     <!--
       os caracteres disponíveis são NDSLIMC, cada um pode ocorrer no máximo uma vez.
       N: ícone da janela
@@ -317,7 +317,7 @@
       </action>
     </keybind>
     <!-- Atalhos de teclado para executar aplicativos -->
-    <keybind key="W-F4">
+    <keybind key="W-F9">
       <action name="Execute">
         <command>~/.config/rofi/powermenu/powermenu.sh</command>
       </action>

@@ -34,6 +34,8 @@ run_cmd() {
 			openbox --exit
 		elif [[ "$DESKTOP_SESSION" == 'hyprland' ]]; then
 			hyprctl dispatch exit
+		elif [[ "$DESKTOP_SESSION" == 'labwc' ]]; then
+			labwc --exit
 		elif [[ "$DESKTOP_SESSION" == 'bspwm' ]]; then
 			bspc quit
 		elif [[ "$DESKTOP_SESSION" == 'i3' ]]; then

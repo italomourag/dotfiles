@@ -27,7 +27,7 @@
     width = (300, 300)
 
     # A altura de uma única notificação, excluindo a moldura.
-    height = (300, 300)
+    height = (50, 100)
 
     # Posicionar a notificação no canto superior direito
     origin = bottom-right
@@ -230,7 +230,7 @@
     max_icon_size = 64
 
     # Caminhos para ícones padrão (apenas necessário quando não se usa pesquisa recursiva de ícones)
-    icon_path = /usr/share/icons/Papirus/16x16/status/:/usr/share/icons/Papirus/16x16/devices/
+    icon_path = /usr/share/icons/Papirus-Light/16x16/status/:/usr/share/icons/Papirus-Light/16x16/devices/
 
     ### Histórico ###
 
