@@ -1,21 +1,12 @@
-QMenu {
-    border: 1px solid #e7e8eb;
-    border-radius: 2px;
-}
-
-QMenu {
-    border: 1px solid #e7e8eb;
-    border-radius: 2px;
-}
-
 QMenu::item:selected {
     background-color: #5294E2;
     color: white;
-    border-radius: 2px;
 }
 
 QMenu::item {
-    padding: 2px 4px;
-    margin: 2px;
-    border-radius: 2px;
+    color: #2e3440;
+}
+
+QMenu::separator {
+    height: 0px;
 }
