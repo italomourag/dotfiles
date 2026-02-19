@@ -1,12 +1,5 @@
 shell                           zsh
 background_blur 1
-cursor_trail 2
-cursor_trail_color #5294e2
-
-scrollbar               hovered
-scrollbar_width 1
-scrollbar_hover_width 1
-scrollbar_interactive yes
 
 ##################################
 ############# FONTES #############
@@ -35,7 +28,7 @@ adjust_line_height  		100%
 
 cursor				#2aa198
 cursor_text_color               #444444
-cursor_shape			beam
+cursor_shape			block
 shell_integration		no-cursor
 select_by_word_characters :	@-./_~?&=%+#
 repaint_delay   		10
