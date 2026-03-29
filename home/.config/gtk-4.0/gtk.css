@@ -1,1 +1,3 @@
-/usr/share/themes/Materia-light-compact/gtk-4.0/gtk.css
+@import url('libadwaita.css');
+@import url('libadwaita-tweaks.css');
+@import 'colors.css';

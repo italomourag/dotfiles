@@ -1,6 +1,6 @@
 QToolTip {
-    background-color: #444444; /* cinza escuro */
-    color: white;              /* texto branco */
+    background-color: #444444;
+    color: white;
     border: 1px solid #333333;
     padding: 4px;
     border-radius: 4px;

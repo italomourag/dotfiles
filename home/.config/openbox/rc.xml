@@ -251,7 +251,7 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Atalhos de teclados para janelas -->
-    <keybind key="A-F4">
+    <keybind key="A-C">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -788,6 +788,9 @@
   </application>
   # fim do exemplo
 -->
+    <application class="luajit" title="*KOReader*">
+      <maximized>true</maximized>
+    </application>
     <application class="kitty">
       <position force="no">
         <x>center</x>

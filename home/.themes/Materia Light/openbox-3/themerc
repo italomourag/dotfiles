@@ -1,115 +1,123 @@
-### WINDOW
-border.width: 0
+# Configuração de Tema do Openbox
+# Localização comum: ~/.themes/SeuTema/openbox-3/themerc
 
-window.client.padding.width: 0
-window.client.padding.height: 0
-window.handle.width: 0
+### JANELAS (WINDOW) ###
 
-padding.width: 4
-padding.height: 4
+# Bordas e Espaçamento
+border.width:                                           0
+window.client.padding.width:                            0
+window.client.padding.height:                           0
+window.handle.width:                                    0
+padding.width:                                          5
+padding.height:                                         5
 
-window.active.border.color: #dbdfe3
-window.inactive.border.color: #dbdfe3
-window.active.title.separator.color: #e7e8eb
-window.inactive.title.separator.color: #e7e8eb
-window.active.client.color: #dbdfe3
-window.inactive.client.color: #dbdfe3
+# Cores das Bordas e Separadores
+window.active.border.color:                             #5c616c
+window.inactive.border.color:                           #dbdfe3
+window.active.title.separator.color:                    #e7e8eb
+window.inactive.title.separator.color:                  #e7e8eb
+window.active.client.color:                             #dbdfe3
+window.inactive.client.color:                           #dbdfe3
 
-window.active.label.text.color: #5c616c
-window.inactive.label.text.color: #979dac
+# Cores do Texto dos Rótulos (Labels)
+window.active.label.text.color:                         #5c616c
+window.inactive.label.text.color:                       #979dac
 
-window.active.button.unpressed.image.color: #5c616c
-window.active.button.pressed.image.color: #5294E2
-window.active.button.disabled.image.color: #dbdfe3
-window.active.button.hover.image.color: #70788d
-window.active.button.toggled.unpressed.image.color: #5c616c
-window.active.button.toggled.pressed.image.color: #5294E2
-window.active.button.toggled.hover.image.color: #70788d
-window.inactive.button.unpressed.image.color: #dddee2
-window.inactive.button.pressed.image.color: #5294E2
-window.inactive.button.disabled.image.color: #dbdfe3
-window.inactive.button.hover.image.color: #70788d
-window.inactive.button.toggled.unpressed.image.color: #dddee2
-window.inactive.button.toggled.pressed.image.color: #5294E2
-window.inactive.button.toggled.hover.image.color: #70788d
+# Cores dos Ícones/Imagens dos Botões
+window.active.button.unpressed.image.color:             #5c616c
+window.active.button.pressed.image.color:               #5294E2
+window.active.button.disabled.image.color:              #dbdfe3
+window.active.button.hover.image.color:                 #70788d
+window.active.button.toggled.unpressed.image.color:     #5c616c
+window.active.button.toggled.pressed.image.color:       #5294E2
+window.active.button.toggled.hover.image.color:         #70788d
 
-window.active.title.bg: flat solid
-window.active.title.bg.color: #e7e8eb
-window.active.label.bg: flat solid
-window.active.label.bg.color: #e7e8eb
-#window.active.handle.bg: texture
-#window.active.grip.bg: texture
-window.inactive.title.bg: flat solid
-window.inactive.title.bg.color: #e7e8eb
-window.inactive.label.bg: flat solid
-window.inactive.label.bg.color: #e7e8eb
-#window.inactive.handle.bg: texture
-#window.inactive.grip.bg: texture
+window.inactive.button.unpressed.image.color:           #dddee2
+window.inactive.button.pressed.image.color:             #5294E2
+window.inactive.button.disabled.image.color:            #dbdfe3
+window.inactive.button.hover.image.color:               #70788d
+window.inactive.button.toggled.unpressed.image.color:   #dddee2
+window.inactive.button.toggled.pressed.image.color:     #5294E2
+window.inactive.button.toggled.hover.image.color:       #70788d
 
-window.active.button.unpressed.bg: parentrelative
-window.active.button.pressed.bg: parentrelative
-window.active.button.hover.bg: parentrelative
-window.active.button.disabled.bg: parentrelative
-window.active.button.toggled.unpressed.bg: parentrelative
-window.active.button.toggled.pressed.bg: parentrelative
-window.active.button.toggled.hover.bg: parentrelative
-window.inactive.button.unpressed.bg: parentrelative
-window.inactive.button.pressed.bg: parentrelative
-window.inactive.button.hover.bg: parentrelative
-window.inactive.button.disabled.bg: parentrelative
-window.inactive.button.toggled.unpressed.bg: parentrelative
-window.inactive.button.toggled.pressed.bg: parentrelative
-window.inactive.button.toggled.hover.bg: parentrelative
+# Planos de Fundo da Barra de Título (Titlebar)
+window.active.title.bg:                                 flat solid
+window.active.title.bg.color:                           #e7e8eb
+window.active.label.bg:                                 flat solid
+window.active.label.bg.color:                           #e7e8eb
 
-window.label.text.justify: center
+window.inactive.title.bg:                               flat solid
+window.inactive.title.bg.color:                         #e7e8eb
+window.inactive.label.bg:                               flat solid
+window.inactive.label.bg.color:                         #e7e8eb
 
-#window.active.label.text.font: text shadow
-#window.inactive.label.text.font: text shadow
+# Planos de Fundo dos Botões (parentrelative herda a cor do título)
+window.active.button.unpressed.bg:                      parentrelative
+window.active.button.pressed.bg:                        parentrelative
+window.active.button.hover.bg:                          parentrelative
+window.active.button.disabled.bg:                       parentrelative
+window.active.button.toggled.unpressed.bg:              parentrelative
+window.active.button.toggled.pressed.bg:                parentrelative
+window.active.button.toggled.hover.bg:                  parentrelative
 
-### MENU
-menu.border.width: 0
-menu.separator.width: 1
-menu.separator.padding.width: 10
-menu.separator.padding.height: 6
+window.inactive.button.unpressed.bg:                    parentrelative
+window.inactive.button.pressed.bg:                      parentrelative
+window.inactive.button.hover.bg:                        parentrelative
+window.inactive.button.disabled.bg:                     parentrelative
+window.inactive.button.toggled.unpressed.bg:            parentrelative
+window.inactive.button.toggled.pressed.bg:              parentrelative
+window.inactive.button.toggled.hover.bg:                parentrelative
 
-menu.overlap.x: -4
-menu.overlap.y: 0
+# Justificação do Texto
+window.label.text.justify:                              center
 
-menu.border.color: #e7e8eb
-menu.separator.color: #a8adb5
+### MENUS ###
 
-menu.title.text.color: #D3DAE3
-menu.items.text.color: #2d3036
-menu.items.disabled.text.color: #76797F
-menu.items.active.text.color: #ffffff
-menu.items.active.disabled.text.color: #aeb0b6
+# Dimensões e Espaçamento do Menu
+menu.border.width:                                      4
+menu.separator.width:                                   1
+menu.separator.padding.width:                           10
+menu.separator.padding.height:                          8
 
-menu.items.bg: flat
-menu.items.bg.color: #e7e8eb
-menu.items.active.bg: flat
-menu.items.active.bg.color: #5294E2
-menu.title.bg: flat
-menu.title.bg.color: #444444
+# Sobreposição de Submenus
+menu.overlap.x:                                         -10
+menu.overlap.y:                                         0
 
-menu.title.text.justify: center
+# Cores do Menu
+menu.border.color:                                      #0b424e
+menu.separator.color:                                   #a8adb5
 
-#menu.items.font: text shadow
-#menu.title.text.font: text shadow
+# Cores do Texto dos Itens
+menu.title.text.color:                                  #D3DAE3
+menu.items.text.color:                                  #2aa198
+menu.items.disabled.text.color:                         #76797F
+menu.items.active.text.color:                           #5294E2
+menu.items.active.disabled.text.color:                  #aeb0b6
 
-### OSD
-osd.border.width: 1
+# Planos de Fundo do Menu
+menu.items.bg:                                          flat
+menu.items.bg.color:                                    #0b424e
+menu.items.active.bg:                                   parentrelative
+menu.items.active.bg.color:                             #5294E2
+menu.title.bg:                                          flat
+menu.title.bg.color:                                    #444444
 
-osd.border.color: #dbdfe3
+# Estilo do Texto do Menu
+menu.title.text.justify:                                center
 
-osd.label.text.color: #5c616c
+### EXIBIÇÃO NA TELA (OSD - On-Screen Display) ###
 
-osd.bg: flat
-osd.bg.color: #e7e8eb
-osd.label.bg: flat
-osd.label.bg.color: #e7e8eb
-osd.hilight.bg: flat
-osd.hilight.bg.color: #5294E2
-osd.unhilight.bg: flat
-osd.unhilight.bg.color: #ffffff
+osd.border.width:                                       1
+osd.border.color:                                       #dbdfe3
+osd.label.text.color:                                   #5c616c
 
-#osd.label.text.font: text shadow
+osd.bg:                                                 flat
+osd.bg.color:                                           #e7e8eb
+osd.label.bg:                                           flat
+osd.label.bg.color:                                     #e7e8eb
+
+# Cores de realce (Hilight) na barra de progresso/seleção do OSD
+osd.hilight.bg:                                         flat
+osd.hilight.bg.color:                                   #5294E2
+osd.unhilight.bg:                                       flat
+osd.unhilight.bg.color:                                 #ffffff

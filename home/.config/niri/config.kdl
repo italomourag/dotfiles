@@ -1,0 +1,278 @@
+// Esta configuração está no formato KDL: https://kdl.dev
+// "/-" comenta o nó seguinte.
+// Confira a wiki para uma descrição completa da configuração:
+// https://yalter.github.io/niri/Configuration:-Introduction
+
+// Configuração de dispositivos de entrada.
+input {
+    keyboard {
+        xkb {
+            layout "br"
+            variant "abnt2"
+            model "thinkpad"
+        }
+
+        // Ativa o numlock na inicialização.
+        numlock
+    }
+
+    // Configurações do libinput.
+    // Omitir configurações as deixa nos valores padrão.
+    touchpad {
+        tap
+        // natural-scroll
+        // dwt (disable-while-typing)
+        // accel-speed 0.2
+        // accel-profile "flat"
+    }
+
+    mouse {
+        // off
+        // natural-scroll
+    }
+
+    trackpoint {
+        // accel-speed 0.2
+    }
+
+    // Focar janelas e saídas automaticamente ao mover o mouse para dentro delas.
+    // max-scroll-amount="0%" faz com que funcione apenas em janelas já visíveis.
+    focus-follows-mouse max-scroll-amount="0%"
+}
+
+// Configuração de Monitores (Outputs).
+// Use `niri msg outputs` para encontrar o nome do seu monitor.
+/-output "eDP-1" {
+    // Resolução e taxa de atualização.
+    mode "1920x1080@120.030"
+
+    // Escala (pode ser fracionária, ex: 1.5).
+    scale 2
+
+    // Transformação (rotação): normal, 90, 180, 270, etc.
+    transform "normal"
+
+    // Posição no espaço de coordenadas global.
+    position x=1280 y=0
+}
+
+// Configurações que influenciam o posicionamento e tamanho das janelas.
+layout {
+    // Espaçamento (gaps) ao redor das janelas em pixels lógicos.
+    gaps 12
+
+    // Quando centralizar uma coluna ao mudar o foco: "never", "always" ou "on-overflow".
+    center-focused-column "never"
+
+    // Larguras predefinidas para alternar com (Mod+R).
+    preset-column-widths {
+        // Proporção define a largura como uma fração da largura da tela.
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    // Largura padrão para novas janelas.
+    default-column-width { proportion 0.5; }
+
+    // Anel de Foco (Focus Ring) - Renderizado ao redor da janela ativa.
+    focus-ring {
+        off // Desativado conforme sua preferência
+        width 4
+        active-color "#7fc8ff"
+        inactive-color "#505050"
+    }
+
+    // Borda (Border) - Similar ao anel de foco, mas sempre visível.
+    border {
+        off // Desativado conforme sua preferência
+        width 4
+        active-color "#ffc87f"
+        inactive-color "#505050"
+        urgent-color "#9b0000"
+    }
+
+    // Sombras das janelas.
+    shadow {
+        on
+        softness 30
+        spread 5
+        offset x=0 y=5
+        color "#0007"
+    }
+
+    // Struts reduzem a área ocupada por janelas (como margens externas extras).
+    struts {
+        // top 64
+    }
+}
+
+// Programas iniciados na inicialização (Startup).
+spawn-at-startup "bash" "-c" "~/.config/niri/wallpaper.sh"
+spawn-at-startup "quickshell"
+spawn-at-startup "dunst"
+spawn-at-startup "~/.config/dunst/musicnotify.sh"
+spawn-at-startup "/home/ito/.config/plasma-workspace/env/kvantum-shadow.sh"
+
+// Pular o pop-up de "Teclas de Atalho Importantes" ao iniciar.
+hotkey-overlay {
+    skip-at-startup
+}
+
+// Pede aos aplicativos para omitirem decorações do lado do cliente (CSD).
+prefer-no-csd
+
+// Caminho para salvar prints (formatado com data e hora).
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+// Configurações de Animação.
+animations {
+    // off // Descomente para desligar todas as animações.
+}
+
+// Regras de Janela (Window Rules).
+window-rule {
+    // Bordas arredondadas para um visual moderno.
+    geometry-corner-radius 10
+    clip-to-geometry true
+}
+
+// Regras específicas por App/Título.
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+window-rule {
+    match title="Abrir imagem"
+    default-column-width { fixed 800; }
+    default-window-height { fixed 400; }
+    open-floating true
+}
+
+// Regras de dimensionamento fixo para aplicações principais
+window-rule {
+    match app-id="gimp$"
+    default-column-width  { fixed 1342; }
+    default-window-height { fixed 758; }
+}
+
+window-rule {
+    match app-id="firefox$"
+    default-column-width  { fixed 1342; }
+    default-window-height { fixed 758; }
+}
+
+window-rule {
+    match app-id="google-chrome$"
+    default-column-width  { fixed 1342; }
+    default-window-height { fixed 758; }
+}
+
+window-rule {
+    match app-id="spotify$"
+    default-column-width  { fixed 1342; }
+    default-window-height { fixed 758; }
+}
+
+window-rule {
+    match app-id="chrome-web.whatsapp.com__-Default"
+    default-column-width  { fixed 1342; }
+    default-window-height { fixed 758; }
+}
+
+window-rule {
+    match app-id="org.telegram.desktop"
+    default-column-width  { fixed 1342; }
+    default-window-height { fixed 758; }
+}
+
+window-rule {
+    match app-id="org.kde.okular"
+    default-column-width  { fixed 1342; }
+    default-window-height { fixed 758; }
+}
+
+// Atalhos de Teclado (Binds).
+binds {
+    // Atalhos de Sistema e Apps.
+    Mod+Shift+Slash { show-hotkey-overlay; }
+    Mod+T { spawn "kitty"; }
+    Mod+Space { spawn "~/.config/rofi/drun/drun.sh"; }
+    Mod+Alt+L { spawn "hyprlock"; }
+    Mod+Q { close-window; }
+    Mod+Shift+E { quit; }
+
+    // Controle de Áudio e Brilho.
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "~/.config/dunst/dunstvolume.sh -i"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "~/.config/dunst/dunstvolume.sh -d"; }
+    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+
+    XF86MonBrightnessUp   allow-when-locked=true { spawn-sh "bash ~/.config/dunst/dunstbright.sh 10%+"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "bash ~/.config/dunst/dunstbright.sh 10%-"; }
+
+    // Navegação de Foco (Vim-style e Setas).
+    Mod+Left  { focus-column-left; }
+    Mod+Down  { focus-window-down; }
+    Mod+Up    { focus-window-up; }
+    Mod+Right { focus-column-right; }
+    Mod+H     { focus-column-left; }
+    Mod+J     { focus-window-down; }
+    Mod+K     { focus-window-up; }
+    Mod+L     { focus-column-right; }
+
+    // Movimentação de Janelas.
+    Mod+Ctrl+Left  { move-column-left; }
+    Mod+Ctrl+Down  { move-window-down; }
+    Mod+Ctrl+Up    { move-window-up; }
+    Mod+Ctrl+Right { move-column-right; }
+
+    // Workspaces (Áreas de Trabalho).
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+4 { focus-workspace 4; }
+    Mod+5 { focus-workspace 5; }
+    Mod+6 { focus-workspace 6; }
+    Mod+7 { focus-workspace 7; }
+    Mod+8 { focus-workspace 8; }
+    Mod+9 { focus-workspace 9; }
+
+    Mod+Ctrl+1 { move-column-to-workspace 1; }
+    Mod+Ctrl+2 { move-column-to-workspace 2; }
+    Mod+Ctrl+3 { move-column-to-workspace 3; }
+
+    // Layout e Dimensionamento.
+    Mod+R { switch-preset-column-width; }
+    Mod+F { maximize-column; }
+    Mod+Shift+F { fullscreen-window; }
+    Mod+C { center-column; }
+    Mod+Minus { set-column-width "-10%"; }
+    Mod+Equal { set-column-width "+10%"; }
+    Mod+V     { toggle-window-floating; }
+    Mod+W     { toggle-column-tabbed-display; }
+
+    // Screenshots.
+    Print { screenshot; }
+    Ctrl+Print { screenshot-screen; }
+    Alt+Print { screenshot-window; }
+
+    // Gestão de Monitores.
+    Mod+Shift+P { power-off-monitors; }
+    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+}
+
+debug {
+    // Permite ações de notificação e ativação de janela do Noctalia.
+    honor-xdg-activation-with-invalid-serial
+}
+
+overview {
+    backdrop-color "#404040"
+}

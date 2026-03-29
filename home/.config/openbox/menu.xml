@@ -6,8 +6,8 @@
     <item label="Gerenciador de Arquivos" icon="/home/ito/.cache/obmenu-generator/icons/fbb24aa830970be5e771d3970be05e38.png"><action name="Execute"><command><![CDATA[xdg-open .]]></command></action></item>
     <item label="Terminal" icon="/home/ito/.cache/obmenu-generator/icons/b5157165ca6dd405c92d4691e85b8c21.png"><action name="Execute"><command><![CDATA[kitty]]></command></action></item>
     <item label="Navegador" icon="/home/ito/.cache/obmenu-generator/icons/204c7e54f64663d644a33246b6e97bb9.png"><action name="Execute"><command><![CDATA[xdg-open http://]]></command></action></item>
-  <menu id="0.455479045937867" icon="/home/ito/.cache/obmenu-generator/icons/ee3cda5dd1143c3770a2f3206a7e07b6.png" label="Arch Linux">
-  <menu id="0.530151990099938" icon="/home/ito/.cache/obmenu-generator/icons/dec60b328f1c68a35fda8af211499c7d.png" label="Acessórios">
+  <menu id="0.91328039702876" icon="/home/ito/.cache/obmenu-generator/icons/ee3cda5dd1143c3770a2f3206a7e07b6.png" label="Arch Linux">
+  <menu id="0.359805885327177" icon="/home/ito/.cache/obmenu-generator/icons/dec60b328f1c68a35fda8af211499c7d.png" label="Acessórios">
     <item label="Android File Transfer (MTP)" icon="/home/ito/.cache/obmenu-generator/icons/7b9a328f769a4233f23976f81d4125d3.png"><action name="Execute"><command><![CDATA[android-file-transfer]]></command></action></item>
     <item label="Ark" icon="/home/ito/.cache/obmenu-generator/icons/1e3436b7723f06cfacd64a19b01c0d6d.png"><action name="Execute"><command><![CDATA[ark]]></command></action></item>
     <item label="BleachBit" icon="/home/ito/.cache/obmenu-generator/icons/b8140a0a5c66a47d1a582a643bd0af19.png"><action name="Execute"><command><![CDATA[bleachbit]]></command></action></item>
@@ -30,27 +30,27 @@
     <item label="Winetricks" icon="/home/ito/.cache/obmenu-generator/icons/1e4be71bb0151eac39e85e1a79872130.png"><action name="Execute"><command><![CDATA[winetricks --gui]]></command></action></item>
     <item label="xgps" icon="/home/ito/.cache/obmenu-generator/icons/abc25907980b6da31ac22cc324ab8231.png"><action name="Execute"><command><![CDATA[xgps]]></command></action></item>
     <item label="xgpsspeed" icon="/home/ito/.cache/obmenu-generator/icons/abc25907980b6da31ac22cc324ab8231.png"><action name="Execute"><command><![CDATA[xgpsspeed]]></command></action></item>
-    <item label="Yazi" icon="/home/ito/.cache/obmenu-generator/icons/4bd9c736e36bf0c2f29fabcf55b64c18.png"><action name="Execute"><command><![CDATA[kitty -e yazi]]></command></action></item>
   </menu>
-  <menu id="0.77627379427771" icon="/home/ito/.cache/obmenu-generator/icons/81e9068edc56d990284911e91789db99.png" label="Desenvolvimento">
+  <menu id="0.295878357757953" icon="/home/ito/.cache/obmenu-generator/icons/81e9068edc56d990284911e91789db99.png" label="Desenvolvimento">
     <item label="CMake" icon="/home/ito/.cache/obmenu-generator/icons/3a380a44d670403c846fa11b7d782aa9.png"><action name="Execute"><command><![CDATA[cmake-gui]]></command></action></item>
     <item label="GitHub Desktop" icon="/home/ito/.cache/obmenu-generator/icons/1e1162664849c10df91c4b952d6637ac.png"><action name="Execute"><command><![CDATA[/usr/bin/github-desktop]]></command></action></item>
     <item label="Kate" icon="/home/ito/.cache/obmenu-generator/icons/9ca0f90a055b5035731d96a7e917b814.png"><action name="Execute"><command><![CDATA[kate -b]]></command></action></item>
     <item label="Visual Studio Code" icon="/home/ito/.cache/obmenu-generator/icons/2cafebc0c006092e281dee93f37df8ba.png"><action name="Execute"><command><![CDATA[/usr/bin/code]]></command></action></item>
   </menu>
-  <menu id="0.997483038433479" icon="/home/ito/.cache/obmenu-generator/icons/9719c989d5ee0220721a506bbb092306.png" label="Jogos">
+  <menu id="0.986539600274178" icon="/home/ito/.cache/obmenu-generator/icons/9719c989d5ee0220721a506bbb092306.png" label="Jogos">
     <item label="Dosbox" icon="/home/ito/.cache/obmenu-generator/icons/6f27a203bdf6cdd2bdde0bb4ab2b0af2.png"><action name="Execute"><command><![CDATA[dosbox]]></command></action></item>
     <item label="RetroArch" icon="/home/ito/.cache/obmenu-generator/icons/846d1bc4bd78a3f5a6534126b1326a04.png"><action name="Execute"><command><![CDATA[retroarch]]></command></action></item>
   </menu>
-  <menu id="0.937401457585185" icon="/home/ito/.cache/obmenu-generator/icons/109812ca9449ccba3b2f6789ef53e1ff.png" label="Gráficos">
+  <menu id="0.228973288683012" icon="/home/ito/.cache/obmenu-generator/icons/109812ca9449ccba3b2f6789ef53e1ff.png" label="Gráficos">
     <item label="G'MIC-Qt" icon="/home/ito/.cache/obmenu-generator/icons/f3b69ac27bdd02905e9b07b5b017b6e1.png"><action name="Execute"><command><![CDATA[gmic_qt]]></command></action></item>
     <item label="GNU Image Manipulation Program" icon="/home/ito/.cache/obmenu-generator/icons/1baab1908b2cc4c05c0e09a0c555cf5d.png"><action name="Execute"><command><![CDATA[gimp-3.0]]></command></action></item>
     <item label="Gwenview" icon="/home/ito/.cache/obmenu-generator/icons/399469ad8a3f6601a0c92c65d63340ee.png"><action name="Execute"><command><![CDATA[gwenview]]></command></action></item>
     <item label="Inkscape" icon="/home/ito/.cache/obmenu-generator/icons/e28408e4c16ed078d95b06cf717aae5b.png"><action name="Execute"><command><![CDATA[/home/ito/.local/share/applications/inkscape.sh]]></command></action></item>
+    <item label="KOReader" icon="/home/ito/.cache/obmenu-generator/icons/69f9b1a0c0e9f8005b1093e1629025a9.png"><action name="Execute"><command><![CDATA[koreader]]></command></action></item>
     <item label="LibreOffice Draw" icon="/home/ito/.cache/obmenu-generator/icons/53112b6388a750620decf527c6cff5b9.png"><action name="Execute"><command><![CDATA[env GTK_THEME=Arc libreoffice --draw]]></command></action></item>
     <item label="Okular" icon="/home/ito/.cache/obmenu-generator/icons/92a68c4636fe2f67070ef1dc43cc2ad0.png"><action name="Execute"><command><![CDATA[okular]]></command></action></item>
   </menu>
-  <menu id="0.666196344405748" icon="/home/ito/.cache/obmenu-generator/icons/73c1338cd7780de28ca2126cc92e8370.png" label="Multimídia">
+  <menu id="0.701640681116245" icon="/home/ito/.cache/obmenu-generator/icons/73c1338cd7780de28ca2126cc92e8370.png" label="Multimídia">
     <item label="Audacity" icon="/home/ito/.cache/obmenu-generator/icons/49bf16557d1fb087d2c73298ae6a4366.png"><action name="Execute"><command><![CDATA[env GDK_BACKEND=x11 UBUNTU_MENUPROXY=0 audacity]]></command></action></item>
     <item label="Easy Effects" icon="/home/ito/.cache/obmenu-generator/icons/3869abb2be52d749f57b2848e2441c0b.png"><action name="Execute"><command><![CDATA[easyeffects]]></command></action></item>
     <item label="guvcview" icon="/home/ito/.cache/obmenu-generator/icons/0794913314dfd1c6ed9d1fce8c6c6c8c.png"><action name="Execute"><command><![CDATA[guvcview]]></command></action></item>
@@ -60,6 +60,7 @@
     <item label="mpv Media Player" icon="/home/ito/.cache/obmenu-generator/icons/07504e59ff7121d74da6d72ca922e33c.png"><action name="Execute"><command><![CDATA[mpv --player-operation-mode=pseudo-gui --]]></command></action></item>
     <item label="OBS Studio (Wayland)" icon="/home/ito/.cache/obmenu-generator/icons/9d1ea1219d86fe7d080a7126d442f1bc.png"><action name="Execute"><command><![CDATA[obs -platform wayland]]></command></action></item>
     <item label="OBS Studio" icon="/home/ito/.cache/obmenu-generator/icons/9d1ea1219d86fe7d080a7126d442f1bc.png"><action name="Execute"><command><![CDATA[obs]]></command></action></item>
+    <item label="SimpleScreenRecorder" icon="/home/ito/.cache/obmenu-generator/icons/fb8169da19b4f3c7930a9b8aa16011ac.png"><action name="Execute"><command><![CDATA[simplescreenrecorder --logfile]]></command></action></item>
     <item label="Spotify" icon="/home/ito/.cache/obmenu-generator/icons/821b7f206b49a10711cda3855a9aaabf.png"><action name="Execute"><command><![CDATA[spotify --uri=%u]]></command></action></item>
     <item label="Stremio" icon="/home/ito/.cache/obmenu-generator/icons/35e028103169adb24a65e8a97f2d45ab.png"><action name="Execute"><command><![CDATA[stremio]]></command></action></item>
     <item label="Tauon" icon="/home/ito/.cache/obmenu-generator/icons/5414ac08d6dc118fe7e34e749a83581d.png"><action name="Execute"><command><![CDATA[tauon]]></command></action></item>
@@ -68,21 +69,22 @@
     <item label="Volume Icon" icon="/home/ito/.cache/obmenu-generator/icons/69444a851b20aad47731d8338679c90f.png"><action name="Execute"><command><![CDATA[volumeicon]]></command></action></item>
     <item label="YouTube Music" icon="/home/ito/.cache/obmenu-generator/icons/2d7c695b632b20cfb539fdbcfaaf06b8.png"><action name="Execute"><command><![CDATA[youtube-music]]></command></action></item>
   </menu>
-  <menu id="0.0475689465150388" icon="/home/ito/.cache/obmenu-generator/icons/204c7e54f64663d644a33246b6e97bb9.png" label="Internet">
+  <menu id="0.604565228472293" icon="/home/ito/.cache/obmenu-generator/icons/204c7e54f64663d644a33246b6e97bb9.png" label="Internet">
     <item label="Discord" icon="/home/ito/.cache/obmenu-generator/icons/7314cd2163a1594b297dcfa87346f021.png"><action name="Execute"><command><![CDATA[/usr/bin/perl -e 'chdir($ARGV[0]) && exec($ARGV[1])' \/usr\/bin \/usr\/bin\/discord]]></command></action></item>
-    <item label="Firefox" icon="/home/ito/.cache/obmenu-generator/icons/38fadec260319c798cf03d0ba2dcce7d.png"><action name="Execute"><command><![CDATA[/usr/lib/firefox/firefox]]></command></action></item>
+    <item label="Firefox" icon="/home/ito/.cache/obmenu-generator/icons/38fadec260319c798cf03d0ba2dcce7d.png"><action name="Execute"><command><![CDATA[bash /home/ito/.local/share/applications/firefoxnobar.sh]]></command></action></item>
     <item label="Google Chrome" icon="/home/ito/.cache/obmenu-generator/icons/0bdc48e1723b7ad3343fbd39a87b50d4.png"><action name="Execute"><command><![CDATA[/usr/bin/google-chrome-stable]]></command></action></item>
     <item label="Mail Reader" icon="/home/ito/.cache/obmenu-generator/icons/5aeaf961de8c77f75ed5079b8fcf9d00.png"><action name="Execute"><command><![CDATA[exo-open --launch MailReader]]></command></action></item>
     <item label="Nicotine+" icon="/home/ito/.cache/obmenu-generator/icons/633160ca3bf4586051809a8d04ecc0dc.png"><action name="Execute"><command><![CDATA[nicotine]]></command></action></item>
     <item label="qBittorrent" icon="/home/ito/.cache/obmenu-generator/icons/b323ab7f9276746e1983a2fc564c8bdd.png"><action name="Execute"><command><![CDATA[qbittorrent]]></command></action></item>
     <item label="Remote Viewer" icon="/home/ito/.cache/obmenu-generator/icons/069dedbb522b2d28c32f9df2ea958e5e.png"><action name="Execute"><command><![CDATA[remote-viewer]]></command></action></item>
-    <item label="Telegram Desktop" icon="/home/ito/.cache/obmenu-generator/icons/13343b18a9ddb73aa201c9101d1a8084.png"><action name="Execute"><command><![CDATA[/home/ito/.local/share/applications/telegram.sh]]></command></action></item>
+    <item label="Telegram" icon="/home/ito/.cache/obmenu-generator/icons/13343b18a9ddb73aa201c9101d1a8084.png"><action name="Execute"><command><![CDATA[Telegram --]]></command></action></item>
     <item label="Tor Browser Launcher Settings" icon="/home/ito/.cache/obmenu-generator/icons/b789e762974e70fb84eb0eed08409e00.png"><action name="Execute"><command><![CDATA[torbrowser-launcher --settings]]></command></action></item>
     <item label="Tor Browser" icon="/home/ito/.cache/obmenu-generator/icons/b789e762974e70fb84eb0eed08409e00.png"><action name="Execute"><command><![CDATA[torbrowser-launcher]]></command></action></item>
     <item label="Web Apps" icon="/home/ito/.cache/obmenu-generator/icons/643b5c5d63ecf90cd5ec125247f1e258.png"><action name="Execute"><command><![CDATA[webapp-manager]]></command></action></item>
     <item label="Web Browser" icon="/home/ito/.cache/obmenu-generator/icons/204c7e54f64663d644a33246b6e97bb9.png"><action name="Execute"><command><![CDATA[exo-open --launch WebBrowser]]></command></action></item>
+    <item label="WhatsApp Web" icon="/home/ito/.cache/obmenu-generator/icons/e115d7ffb0dbfdc4c857bf8dbd3bfe79.png"><action name="Execute"><command><![CDATA[google-chrome-stable --app=http://web.whatsapp.com --class=WebApp-WhatsAppWeb5254 --name=WebApp-WhatsAppWeb5254 --user-data-dir=/home/ito/.local/share/ice/profiles/WhatsAppWeb5254 --profile-directory=Default]]></command></action></item>
   </menu>
-  <menu id="0.809616491006715" icon="/home/ito/.cache/obmenu-generator/icons/90734395a153bd408bf766a39679fcae.png" label="Escritório">
+  <menu id="0.488012105733183" icon="/home/ito/.cache/obmenu-generator/icons/90734395a153bd408bf766a39679fcae.png" label="Escritório">
     <item label="Crow Translate" icon="/home/ito/.cache/obmenu-generator/icons/655d517046716a55bfd93ecfd6ac41c5.png"><action name="Execute"><command><![CDATA[crow]]></command></action></item>
     <item label="LibreOffice Base" icon="/home/ito/.cache/obmenu-generator/icons/24f026277891ae51ddbfeeae75f02273.png"><action name="Execute"><command><![CDATA[env GTK_THEME=Arc libreoffice --base]]></command></action></item>
     <item label="LibreOffice Calc" icon="/home/ito/.cache/obmenu-generator/icons/9f27f103caed4dad49e6af4766ee5aea.png"><action name="Execute"><command><![CDATA[env GTK_THEME=Arc libreoffice --calc]]></command></action></item>
@@ -94,10 +96,7 @@
     <item label="Okular" icon="/home/ito/.cache/obmenu-generator/icons/92a68c4636fe2f67070ef1dc43cc2ad0.png"><action name="Execute"><command><![CDATA[okular]]></command></action></item>
     <item label="PDF Arranger" icon="/home/ito/.cache/obmenu-generator/icons/d422917c7c2b961124aab0237219f1d3.png"><action name="Execute"><command><![CDATA[pdfarranger]]></command></action></item>
   </menu>
-  <menu id="0.353001009664158" icon="/home/ito/.cache/obmenu-generator/icons/68b0b7e222171e0eadb01a15fba5b98c.png" label="Other">
-    <item label="WhatsApp Web" icon="/home/ito/.cache/obmenu-generator/icons/e115d7ffb0dbfdc4c857bf8dbd3bfe79.png"><action name="Execute"><command><![CDATA[google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsAppWeb5254 --name=WebApp-WhatsAppWeb5254 --user-data-dir=/home/ito/.local/share/ice/profiles/WhatsAppWeb5254 --profile-directory=Default]]></command></action></item>
-  </menu>
-  <menu id="0.285738980922133" icon="/home/ito/.cache/obmenu-generator/icons/934d1ed0c2ae238637d2886896bb9b8a.png" label="Configurações">
+  <menu id="0.395065081995572" icon="/home/ito/.cache/obmenu-generator/icons/934d1ed0c2ae238637d2886896bb9b8a.png" label="Configurações">
     <item label="Accessibility" icon="/home/ito/.cache/obmenu-generator/icons/dbe2dc7d51f47785549c9deb066f2923.png"><action name="Execute"><command><![CDATA[xfce4-accessibility-settings]]></command></action></item>
     <item label="Advanced Network Configuration" icon="/home/ito/.cache/obmenu-generator/icons/1be588c8d58263b210606a8bc5a67831.png"><action name="Execute"><command><![CDATA[nm-connection-editor]]></command></action></item>
     <item label="Appearance" icon="/home/ito/.cache/obmenu-generator/icons/0dd68bbb35c85975ca801fd9aa136eb7.png"><action name="Execute"><command><![CDATA[xfce4-appearance-settings]]></command></action></item>
@@ -111,7 +110,6 @@
     <item label="KDE System Settings" icon="/home/ito/.cache/obmenu-generator/icons/934d1ed0c2ae238637d2886896bb9b8a.png"><action name="Execute"><command><![CDATA[systemsettings]]></command></action></item>
     <item label="Keyboard" icon="/home/ito/.cache/obmenu-generator/icons/a4e5205467b6f5a5a1c2d3acb656a10b.png"><action name="Execute"><command><![CDATA[xfce4-keyboard-settings]]></command></action></item>
     <item label="Kvantum Manager" icon="/home/ito/.cache/obmenu-generator/icons/0bf2f4829835e209a17b259f945ce917.png"><action name="Execute"><command><![CDATA[kvantummanager]]></command></action></item>
-    <item label="Labwc Tweaks" icon="/home/ito/.cache/obmenu-generator/icons/7b4a4071417e2d7674e9b4cba1f23eeb.png"><action name="Execute"><command><![CDATA[labwc-tweaks]]></command></action></item>
     <item label="Manage Printing" icon="/home/ito/.cache/obmenu-generator/icons/81e06810799626570098e48f53068c9d.png"><action name="Execute"><command><![CDATA[xdg-open http://localhost:631/]]></command></action></item>
     <item label="Mouse and Touchpad" icon="/home/ito/.cache/obmenu-generator/icons/98876c630b0f1271c951ccf4f45c78ba.png"><action name="Execute"><command><![CDATA[xfce4-mouse-settings]]></command></action></item>
     <item label="Openbox Configuration Manager" icon="/home/ito/.cache/obmenu-generator/icons/0476ece428f10447c407d0cc404807fd.png"><action name="Execute"><command><![CDATA[obconf]]></command></action></item>
@@ -127,15 +125,14 @@
     <item label="Volume Control" icon="/home/ito/.cache/obmenu-generator/icons/87e08b2c2266f57d95c9767f68fa6f3c.png"><action name="Execute"><command><![CDATA[pavucontrol]]></command></action></item>
     <item label="WineGUI" icon="/home/ito/.cache/obmenu-generator/icons/fa9736fd35a76a4e3c8eb78ad3ec6256.png"><action name="Execute"><command><![CDATA[/usr/bin/winegui]]></command></action></item>
   </menu>
-  <menu id="0.293082764854073" icon="/home/ito/.cache/obmenu-generator/icons/ded9507e62e01dc3e2a9c764c238fa5e.png" label="Sistema">
+  <menu id="0.480071758211807" icon="/home/ito/.cache/obmenu-generator/icons/ded9507e62e01dc3e2a9c764c238fa5e.png" label="Sistema">
     <item label="Android File Transfer (MTP)" icon="/home/ito/.cache/obmenu-generator/icons/7b9a328f769a4233f23976f81d4125d3.png"><action name="Execute"><command><![CDATA[android-file-transfer]]></command></action></item>
     <item label="BleachBit" icon="/home/ito/.cache/obmenu-generator/icons/b8140a0a5c66a47d1a582a643bd0af19.png"><action name="Execute"><command><![CDATA[bleachbit]]></command></action></item>
     <item label="CPU-X" icon="/home/ito/.cache/obmenu-generator/icons/6a700994a28c7c358e8a1ebb4faa1523.png"><action name="Execute"><command><![CDATA[cpu-x]]></command></action></item>
-    <item label="Dolphin" icon="/home/ito/.cache/obmenu-generator/icons/a72225750b144dcc7b7b3e8da42a737e.png"><action name="Execute"><command><![CDATA[dolphin]]></command></action></item>
+    <item label="Dolphin" icon="/home/ito/.cache/obmenu-generator/icons/fbb24aa830970be5e771d3970be05e38.png"><action name="Execute"><command><![CDATA[dolphin]]></command></action></item>
     <item label="GParted" icon="/home/ito/.cache/obmenu-generator/icons/5ef7ed2e9a97667b7a4d9109d4f6ea4e.png"><action name="Execute"><command><![CDATA[/usr/bin/gparted]]></command></action></item>
     <item label="Hardware Locality lstopo" icon="/home/ito/.cache/obmenu-generator/icons/5a114182fee14c5dfb9bff1c0cc44147.png"><action name="Execute"><command><![CDATA[lstopo]]></command></action></item>
     <item label="Htop" icon="/home/ito/.cache/obmenu-generator/icons/d6256ba9f410160cd50c098ee153e426.png"><action name="Execute"><command><![CDATA[kitty -e 'htop']]></command></action></item>
-    <item label="Hyprshot" icon="/home/ito/.cache/obmenu-generator/icons/a60bc13b3afe21473e55f2bb2d7592a0.png"><action name="Execute"><command><![CDATA[hyprshot-gui]]></command></action></item>
     <item label="Info Center" icon="/home/ito/.cache/obmenu-generator/icons/88ffe0d9a1cc97bf6da5b212a1d175b2.png"><action name="Execute"><command><![CDATA[kinfocenter]]></command></action></item>
     <item label="kitty" icon="/home/ito/.cache/obmenu-generator/icons/b5157165ca6dd405c92d4691e85b8c21.png"><action name="Execute"><command><![CDATA[kitty]]></command></action></item>
     <item label="Konsole" icon="/home/ito/.cache/obmenu-generator/icons/b5157165ca6dd405c92d4691e85b8c21.png"><action name="Execute"><command><![CDATA[konsole]]></command></action></item>
@@ -149,16 +146,15 @@
     <item label="UXTerm" icon="/home/ito/.cache/obmenu-generator/icons/0063b090bb17da5a944277e0573ae2e3.png"><action name="Execute"><command><![CDATA[uxterm]]></command></action></item>
     <item label="Virtual Machine Manager" icon="/home/ito/.cache/obmenu-generator/icons/d33d320725396a369902f65107581ec4.png"><action name="Execute"><command><![CDATA[virt-manager]]></command></action></item>
     <item label="XTerm" icon="/home/ito/.cache/obmenu-generator/icons/0063b090bb17da5a944277e0573ae2e3.png"><action name="Execute"><command><![CDATA[xterm]]></command></action></item>
-    <item label="Yazi" icon="/home/ito/.cache/obmenu-generator/icons/4bd9c736e36bf0c2f29fabcf55b64c18.png"><action name="Execute"><command><![CDATA[kitty -e yazi]]></command></action></item>
   </menu>
-  <menu id="0.524167178654785" icon="/home/ito/.cache/obmenu-generator/icons/18d0310fcf7c8bb965edf7c46583c560.png" label="Openbox">
-  <menu id="0.225388672465659" icon="/home/ito/.cache/obmenu-generator/icons/d9523727fbc6c8208e07db49f2addf03.png" label="Obmenu Generator">
+  <menu id="0.575964434321389" icon="/home/ito/.cache/obmenu-generator/icons/18d0310fcf7c8bb965edf7c46583c560.png" label="Openbox">
+  <menu id="0.0230694368851587" icon="/home/ito/.cache/obmenu-generator/icons/d9523727fbc6c8208e07db49f2addf03.png" label="Obmenu Generator">
     <item label="Gerar static menu" icon="/home/ito/.cache/obmenu-generator/icons/d9523727fbc6c8208e07db49f2addf03.png"><action name="Execute"><command><![CDATA[obmenu-generator -s -c]]></command></action></item>
     <item label="Gerar static menu com ícones" icon="/home/ito/.cache/obmenu-generator/icons/d9523727fbc6c8208e07db49f2addf03.png"><action name="Execute"><command><![CDATA[obmenu-generator -s -i -c]]></command></action></item>
   <separator/>
     <item label="Atualizar cache" icon="/home/ito/.cache/obmenu-generator/icons/ab41042c10a820959b68792bac7a80fc.png"><action name="Execute"><command><![CDATA[obmenu-generator -d]]></command></action></item>
   </menu>
-  <menu id="0.201771559741033" icon="/home/ito/.cache/obmenu-generator/icons/18d0310fcf7c8bb965edf7c46583c560.png" label="Configurações do Openbox">
+  <menu id="0.478572959110341" icon="/home/ito/.cache/obmenu-generator/icons/18d0310fcf7c8bb965edf7c46583c560.png" label="Configurações do Openbox">
     <item label="Openbox Autostart" icon="/home/ito/.cache/obmenu-generator/icons/a03ff664a373a1a68651467cd9fd0c39.png"><action name="Execute"><command><![CDATA[mousepad ~/.config/openbox/autostart]]></command></action></item>
     <item label="Openbox RC" icon="/home/ito/.cache/obmenu-generator/icons/a03ff664a373a1a68651467cd9fd0c39.png"><action name="Execute"><command><![CDATA[mousepad ~/.config/openbox/rc.xml]]></command></action></item>
     <item label="Openbox Menu" icon="/home/ito/.cache/obmenu-generator/icons/a03ff664a373a1a68651467cd9fd0c39.png"><action name="Execute"><command><![CDATA[mousepad ~/.config/openbox/menu.xml]]></command></action></item>

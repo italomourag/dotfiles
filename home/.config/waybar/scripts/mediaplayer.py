@@ -1,45 +1,51 @@
 #!/usr/bin/env python3
-from gi.repository import Playerctl, GLib
+import gi
+import json
 import argparse
 import logging
 import sys
 import signal
-import gi
-import json
 gi.require_version('Playerctl', '2.0')
+from gi.repository import Playerctl, GLib
 
+# Configuração do Logger
 logger = logging.getLogger(__name__)
 
-
+/* Escreve a saída no formato JSON para o Waybar */
 def write_output(text, player, mode):
-    logger.info('Writing output')
+    logger.info('Escrevendo saída')
 
     if mode == 'paused':
-        output = {'text': text,
-                  'class': 'paused',
-                  'alt': player.props.player_name}
+        output = {
+            'text':  text,
+            'class': 'paused',
+            'alt':   player.props.player_name
+        }
     else:
-        output = {'text': text,
-                  'class': 'playing',
-                  'alt': player.props.player_name}
+        output = {
+            'text':  text,
+            'class': 'playing',
+            'alt':   player.props.player_name
+        }
 
     sys.stdout.write(json.dumps(output) + '\n')
     sys.stdout.flush()
 
-
+/* Chamado quando o status de reprodução muda */
 def on_play(player, status, manager):
-    logger.info('Received new playback status')
+    logger.info('Novo status de reprodução recebido')
     on_metadata(player, player.props.metadata, manager)
 
-
+/* Chamado quando os metadados da música mudam */
 def on_metadata(player, metadata, manager):
-    logger.info('Received new metadata')
+    logger.info('Novos metadados recebidos')
     track_info = ''
 
+    # Lógica específica para anúncios no Spotify
     if player.props.player_name == 'spotify' and \
-            'mpris:trackid' in metadata.keys() and \
-            ':ad:' in player.props.metadata['mpris:trackid']:
-        track_info = 'AD PLAYING'
+       'mpris:trackid' in metadata.keys() and \
+       ':ad:' in player.props.metadata['mpris:trackid']:
+        track_info = 'ANÚNCIO TOCANDO'
     elif player.get_artist() != '' and player.get_title() != '':
         track_info = '{title}'.format(title=player.get_title())
     else:
@@ -50,63 +56,57 @@ def on_metadata(player, metadata, manager):
     else:
         write_output(track_info, player, 'playing')
 
-
+/* Chamado quando um novo player de mídia aparece no sistema */
 def on_player_appeared(manager, player, selected_player=None):
     if player is not None and (selected_player is None or player.name == selected_player):
         init_player(manager, player)
     else:
-        logger.debug(
-            "New player appeared, but it's not the selected player, skipping")
+        logger.debug("Novo player apareceu, mas não é o selecionado, ignorando")
 
-
+/* Chamado quando um player de mídia é fechado */
 def on_player_vanished(manager, player):
-    logger.info('Player has vanished')
+    logger.info('O player desapareceu')
     sys.stdout.write('\n')
     sys.stdout.flush()
 
-
+/* Inicializa as conexões de sinal do player */
 def init_player(manager, name):
-    logger.debug('Initialize player: {player}'.format(player=name.name))
+    logger.debug('Inicializando player: {player}'.format(player=name.name))
     player = Playerctl.Player.new_from_name(name)
     player.connect('playback-status', on_play, manager)
     player.connect('metadata', on_metadata, manager)
     manager.manage_player(player)
     on_metadata(player, player.props.metadata, manager)
 
-
+/* Manipula sinais de interrupção (Ctrl+C, etc) */
 def signal_handler(sig, frame):
-    logger.debug('Received signal to stop, exiting')
+    logger.debug('Sinal de parada recebido, saindo')
     sys.stdout.write('\n')
     sys.stdout.flush()
-    # loop.quit()
     sys.exit(0)
 
-
+/* Processa os argumentos da linha de comando */
 def parse_arguments():
     parser = argparse.ArgumentParser()
-
-    # Increase verbosity with every occurrence of -v
+    # Aumenta a verbosidade a cada ocorrência de -v
     parser.add_argument('-v', '--verbose', action='count', default=0)
-
-    # Define for which player we're listening
+    # Define qual player específico monitorar
     parser.add_argument('--player')
-
     return parser.parse_args()
 
-
+/* Função principal */
 def main():
     arguments = parse_arguments()
 
-    # Initialize logging
+    # Inicializa o logging
     logging.basicConfig(stream=sys.stderr, level=logging.DEBUG,
                         format='%(name)s %(levelname)s %(message)s')
 
-    # Logging is set by default to WARN and higher.
-    # With every occurrence of -v it's lowered by one
+    # O Log é definido como WARN por padrão. Diminui a cada -v usado.
     logger.setLevel(max((3 - arguments.verbose) * 10, 0))
 
-    # Log the sent command line arguments
-    logger.debug('Arguments received {}'.format(vars(arguments)))
+    # Loga os argumentos recebidos
+    logger.debug('Argumentos recebidos {}'.format(vars(arguments)))
 
     manager = Playerctl.PlayerManager()
     loop = GLib.MainLoop()
@@ -121,15 +121,13 @@ def main():
 
     for player in manager.props.player_names:
         if arguments.player is not None and arguments.player != player.name:
-            logger.debug('{player} is not the filtered player, skipping it'
-                         .format(player=player.name)
-                         )
+            logger.debug('{player} não é o player filtrado, ignorando'
+                         .format(player=player.name))
             continue
 
         init_player(manager, player)
 
     loop.run()
-
 
 if __name__ == '__main__':
     main()

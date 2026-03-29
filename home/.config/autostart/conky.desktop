@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=conky --config=/home/ito/.config/conky/conky_wayland.conf --pause=5
+Exec=conky --config=/home/ito/.config/conky/conky.conf --pause=4
 Hidden=false
 X-GNOME-Autostart-enabled=true
 Name=Conky
