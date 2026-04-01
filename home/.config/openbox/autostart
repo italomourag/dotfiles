@@ -1,30 +1,28 @@
 # Processos Iniciais
+sleep 1 && /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1 &
+~/.config/autostart/notification-daemon.sh &
+picom -b &
 ~/.config/dunst/musicnotify.sh &
-
 sed -i 's/^menu_shadow_depth=.*/menu_shadow_depth=0/' \
   ~/.config/Kvantum/MateriaLight/MateriaLight.kvconfig
 
-# Splash Screen
-~/.config/openbox/splash.sh &
-
-# Inicialização com Delay
+# Splash screen e abertura de programas
 (
-    sleep 9
-    dunst &
     sleep 0.5
+    ~/.config/openbox/splash.sh &
+
+    sleep 1.5
+    nitrogen --restore &
     xfce4-panel &
-    #tint2 &
-    #volumeicon &
     blueman-applet &
     nm-applet &
     xfce4-power-manager &
     xfce4-pulseaudio-plugin &
-) &
 
-# Background Services
-sleep 1 && /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1 &
-~/.config/autostart/notification-daemon.sh &
-picom -b &
+    sleep 7
+    dunst &
+
+) &
 
 # Configurações de Display/Hardware
 xset -dpms &
