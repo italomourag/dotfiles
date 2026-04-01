@@ -1,21 +1,29 @@
 [Desktop Entry]
-Name=Telegram Desktop
-Comment=Official desktop version of Telegram messaging app
-TryExec=telegram-desktop
-Exec=/home/ito/.local/share/applications/telegram.sh
-Icon=telegram
-Terminal=false
-StartupWMClass=TelegramDesktop
-Type=Application
-Categories=Chat;Network;InstantMessaging;Qt;
-MimeType=x-scheme-handler/tg;
-Keywords=tg;chat;im;messaging;messenger;sms;tdesktop;
 Actions=quit;
+Categories=Chat;Network;InstantMessaging;Qt;
+Comment=Nova era de mensagem
+DBusActivatable=true
+Exec=Telegram -- %U
+Icon=org.telegram.desktop
+Keywords=tg;chat;im;messaging;messenger;sms;tdesktop;
+MimeType=x-scheme-handler/tg;x-scheme-handler/tonsite;
+Name=Telegram
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
 SingleMainWindow=true
-X-GNOME-UsesNotifications=true
+StartupNotify=true
+StartupWMClass=TelegramDesktop
+Terminal=false
+TerminalOptions=
+TryExec=Telegram
+Type=Application
 X-GNOME-SingleWindow=true
+X-GNOME-UsesNotifications=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=
 
 [Desktop Action quit]
-Exec=telegram-desktop -quit
-Name=Quit Telegram
+Exec=Telegram -quit
 Icon=application-exit
+Name=Quit Telegram

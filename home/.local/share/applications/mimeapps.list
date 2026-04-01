@@ -1,0 +1,5 @@
+[Default Applications]
+text/plain=org.kde.kate.desktop;
+
+[Added Associations]
+text/plain=org.kde.kate.desktop;
