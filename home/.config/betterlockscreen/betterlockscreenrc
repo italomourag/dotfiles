@@ -1,52 +1,80 @@
 # ~/.config/betterlockscreenrc
 
-# Opções padrão
+# ╔═══════════════════════════════╗
+# ║        Opções Gerais          ║
+# ╚═══════════════════════════════╝
 display_on=0
 span_image=false
 lock_timeout=300
+quiet=false
+wallpaper_cmd="feh --bg-fill"
+
+# ╔═══════════════════════════════╗
+# ║        Efeitos de Imagem      ║
+# ╚═══════════════════════════════╝
 fx_list=(blur)
-dim_level=40
 blur_level=15
+dim_level=40
 pixel_scale=10,1000
 solid_color=00000000
-wallpaper_cmd="feh --bg-fill"
-quiet=false
 
-# Tema padrão
-loginbox=00000066
+# ╔═══════════════════════════════╗
+# ║           Posição             ║
+# ╚═══════════════════════════════╝
+lockargs=(--time-pos="ix+-105:iy+100")
+lockargs+=(--greeter-pos="ix-130:iy+120")
+lockargs+=(--ind-pos="ix+690:iy+480")
+
+# ╔═══════════════════════════════╗
+# ║        Fundo e Sombra         ║
+# ╚═══════════════════════════════╝
+bgcolor=269cb6cc
+loginbox=00000000
 loginshadow=00000000
-locktext="
 
- Digite a senha"
+# ╔═══════════════════════════════╗
+# ║        Tipografia             ║
+# ╚═══════════════════════════════╝
 font="Roboto Bold"
+
+# ╔═══════════════════════════════╗
+# ║        Horário e Texto        ║
+# ╚═══════════════════════════════╝
+time_format="%d/%m  /  %H:%M"
+timecolor=444444
+locktext="Digite a senha para desbloquear"
+greetercolor=444444
+layoutcolor=ffffffff
+
+# ╔═══════════════════════════════╗
+# ║        Anel de Senha          ║
+# ╚═══════════════════════════════╝
 ringcolor=e7e8eb
 insidecolor=00000000
 separatorcolor=00000000
+
 ringvercolor=e7e8eb
 insidevercolor=00000000
+
 ringwrongcolor=e7e8eb
 insidewrongcolor=d23c3dff
-timecolor=444444
-time_format="  %d/%m
-  %H:%M"
-greetercolor=444444
-layoutcolor=ffffffff
+
 keyhlcolor=444444
 bshlcolor=444444
+modifcolor=d23c3dff
+
+# ╔═══════════════════════════════╗
+# ║        Textos de Status       ║
+# ╚═══════════════════════════════╝
 veriftext=""
 verifcolor=444444
 wrongtext=""
 wrongcolor=d23c3dff
-modifcolor=d23c3dff
-bgcolor=269cb6a5
 
-#
-# Opções avançadas
-#
-
-# i3lockcolor_bin="i3lock-color"      # Comando definido manualmente para i3lock-color
-# suspend_command="systemctl suspend" # Mudar manualmente a ação, por exemplo, comando de hibernação/suspensão
-
-# i3lock-color - custom arguments
-# lockargs=()                         # Sobrescrevendo o padrão "(-n)"
-# lockargs+=(--ignore-empty-password) # Adicionando novo argumento
+# ╔═══════════════════════════════╗
+# ║        Opções Avançadas       ║
+# ╚═══════════════════════════════╝
+# i3lockcolor_bin="i3lock-color"
+# suspend_command="systemctl suspend"
+# lockargs=()
+# lockargs+=(--ignore-empty-password)
