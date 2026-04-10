@@ -1,0 +1,4 @@
+# Faz apps KDE/Qt acreditarem que estão numa sessão KDE
+export KDE_FULL_SESSION=true
+export DESKTOP_SESSION=KDE
+export KDE_SESSION_VERSION=6

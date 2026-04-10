@@ -1,29 +1,25 @@
 # Processos Iniciais
+dbus-update-activation-environment --systemd KDE_FULL_SESSION=true DESKTOP_SESSION=KDE KDE_SESSION_VERSION=6 QT_QPA_PLATFORMTHEME=qt6ct
 sleep 1 && /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1 &
 ~/.config/autostart/notification-daemon.sh &
 picom -b &
 ~/.config/dunst/musicnotify.sh &
 sed -i 's/^menu_shadow_depth=.*/menu_shadow_depth=0/' \
   ~/.config/Kvantum/MateriaLight/MateriaLight.kvconfig
-
 # Splash screen e abertura de programas
 (
     sleep 0.5
     ~/.config/openbox/splash.sh &
-
-    sleep 1.5
+    sleep 1
     nitrogen --restore &
     xfce4-panel &
     blueman-applet &
     nm-applet &
     xfce4-power-manager &
     xfce4-pulseaudio-plugin &
-
-    sleep 7
+    sleep 2.5
     dunst &
-
 ) &
-
 # Configurações de Display/Hardware
 xset -dpms &
 xset s off &
