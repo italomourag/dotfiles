@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Name=Stremio
+Comment=Aplicativo Web
+Exec=google-chrome-stable --app="http://127.0.0.1:11470/" --class=WebApp-Stremio5159 --name=WebApp-Stremio5159 --user-data-dir=/home/ito/.local/share/ice/profiles/Stremio5159
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=stremio
+Categories=GTK;WebApps;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=WebApp-Stremio5159
+StartupNotify=true
+X-WebApp-Browser=Chrome
+X-WebApp-URL=https://web.stremio.com/
+X-WebApp-CustomParameters=
+X-WebApp-Navbar=false
+X-WebApp-PrivateWindow=false
+X-WebApp-Isolated=true

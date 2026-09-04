@@ -62,3 +62,8 @@ alias info="fastfetch"
 
 # Carrega a configuração específica do Powerlevel10k, se existir.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH="$HOME/.local/bin:$PATH"
+export LIBVIRT_DEFAULT_URI="qemu:///system"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

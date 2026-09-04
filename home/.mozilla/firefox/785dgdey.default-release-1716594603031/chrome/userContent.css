@@ -1,0 +1,17 @@
+@-moz-document domain("1500chan.org") {
+    * {
+        font-family: "Roboto", sans-serif !important;
+    }
+
+    .fa, .fas, .material-icons, svg, i {
+        font-family: 'FontAwesome' !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+    }
+
+    svg {
+        font-family: inherit !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+    }
+}

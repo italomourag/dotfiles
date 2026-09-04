@@ -1,4 +1,4 @@
-# Configuração de Tema do Openbox
+# Configuração de Tema do Openbox - Materia Light
 # Localização comum: ~/.themes/SeuTema/openbox-3/themerc
 
 ### JANELAS (WINDOW) ###
@@ -9,47 +9,47 @@ window.client.padding.width:                            0
 window.client.padding.height:                           0
 window.handle.width:                                    0
 padding.width:                                          5
-padding.height:                                         5
+padding.height:                                         6
 
 # Cores das Bordas e Separadores
-window.active.border.color:                             #5c616c
-window.inactive.border.color:                           #dbdfe3
-window.active.title.separator.color:                    #e7e8eb
-window.inactive.title.separator.color:                  #e7e8eb
-window.active.client.color:                             #dbdfe3
-window.inactive.client.color:                           #dbdfe3
+window.active.border.color:                             #2196F3
+window.inactive.border.color:                           #e0e0e0
+window.active.title.separator.color:                    #fafafa
+window.inactive.title.separator.color:                  #f5f5f5
+window.active.client.color:                             #fafafa
+window.inactive.client.color:                           #f5f5f5
 
 # Cores do Texto dos Rótulos (Labels)
-window.active.label.text.color:                         #5c616c
-window.inactive.label.text.color:                       #979dac
+window.active.label.text.color:                         #212121
+window.inactive.label.text.color:                       #9e9e9e
 
 # Cores dos Ícones/Imagens dos Botões
-window.active.button.unpressed.image.color:             #5c616c
-window.active.button.pressed.image.color:               #5294E2
-window.active.button.disabled.image.color:              #dbdfe3
-window.active.button.hover.image.color:                 #70788d
-window.active.button.toggled.unpressed.image.color:     #5c616c
-window.active.button.toggled.pressed.image.color:       #5294E2
-window.active.button.toggled.hover.image.color:         #70788d
+window.active.button.unpressed.image.color:             #212121
+window.active.button.pressed.image.color:               #2196F3
+window.active.button.disabled.image.color:              #9e9e9e
+window.active.button.hover.image.color:                 #000000
+window.active.button.toggled.unpressed.image.color:     #212121
+window.active.button.toggled.pressed.image.color:       #2196F3
+window.active.button.toggled.hover.image.color:         #000000
 
-window.inactive.button.unpressed.image.color:           #dddee2
-window.inactive.button.pressed.image.color:             #5294E2
-window.inactive.button.disabled.image.color:            #dbdfe3
-window.inactive.button.hover.image.color:               #70788d
-window.inactive.button.toggled.unpressed.image.color:   #dddee2
-window.inactive.button.toggled.pressed.image.color:     #5294E2
-window.inactive.button.toggled.hover.image.color:       #70788d
+window.inactive.button.unpressed.image.color:           #9e9e9e
+window.inactive.button.pressed.image.color:             #2196F3
+window.inactive.button.disabled.image.color:            #bdbdbd
+window.inactive.button.hover.image.color:               #757575
+window.inactive.button.toggled.unpressed.image.color:   #9e9e9e
+window.inactive.button.toggled.pressed.image.color:     #2196F3
+window.inactive.button.toggled.hover.image.color:       #757575
 
 # Planos de Fundo da Barra de Título (Titlebar)
 window.active.title.bg:                                 flat solid
-window.active.title.bg.color:                           #e7e8eb
+window.active.title.bg.color:                           #f0f0f0
 window.active.label.bg:                                 flat solid
-window.active.label.bg.color:                           #e7e8eb
+window.active.label.bg.color:                           #f0f0f0
 
 window.inactive.title.bg:                               flat solid
-window.inactive.title.bg.color:                         #e7e8eb
+window.inactive.title.bg.color:                         #ebebeb
 window.inactive.label.bg:                               flat solid
-window.inactive.label.bg.color:                         #e7e8eb
+window.inactive.label.bg.color:                         #ebebeb
 
 # Planos de Fundo dos Botões (parentrelative herda a cor do título)
 window.active.button.unpressed.bg:                      parentrelative
@@ -75,7 +75,7 @@ window.label.text.justify:                              center
 
 # Dimensões e Espaçamento do Menu
 menu.border.width:                                      4
-menu.separator.width:                                   1
+menu.separator.width:                                   2
 menu.separator.padding.width:                           10
 menu.separator.padding.height:                          8
 
@@ -84,23 +84,23 @@ menu.overlap.x:                                         -10
 menu.overlap.y:                                         0
 
 # Cores do Menu
-menu.border.color:                                      #0b424e
-menu.separator.color:                                   #a8adb5
+menu.border.color:                                      #e0e0e0
+menu.separator.color:                                   #767676
 
 # Cores do Texto dos Itens
-menu.title.text.color:                                  #D3DAE3
-menu.items.text.color:                                  #2aa198
-menu.items.disabled.text.color:                         #76797F
-menu.items.active.text.color:                           #5294E2
-menu.items.active.disabled.text.color:                  #aeb0b6
+menu.title.text.color:                                  #212121
+menu.items.text.color:                                  #212121
+menu.items.disabled.text.color:                         #9e9e9e
+menu.items.active.text.color:                           #747474
+menu.items.active.disabled.text.color:                  #767676
 
 # Planos de Fundo do Menu
 menu.items.bg:                                          flat
-menu.items.bg.color:                                    #0b424e
-menu.items.active.bg:                                   parentrelative
-menu.items.active.bg.color:                             #5294E2
+menu.items.bg.color:                                    #e0e0e0
+menu.items.active.bg:                                   flat solid
+menu.items.active.bg.color:                             #e0e0e0
 menu.title.bg:                                          flat
-menu.title.bg.color:                                    #444444
+menu.title.bg.color:                                    #f5f5f5
 
 # Estilo do Texto do Menu
 menu.title.text.justify:                                center
@@ -108,16 +108,16 @@ menu.title.text.justify:                                center
 ### EXIBIÇÃO NA TELA (OSD - On-Screen Display) ###
 
 osd.border.width:                                       1
-osd.border.color:                                       #dbdfe3
-osd.label.text.color:                                   #5c616c
+osd.border.color:                                       #e0e0e0
+osd.label.text.color:                                   #212121
 
 osd.bg:                                                 flat
-osd.bg.color:                                           #e7e8eb
+osd.bg.color:                                           #fafafa
 osd.label.bg:                                           flat
-osd.label.bg.color:                                     #e7e8eb
+osd.label.bg.color:                                     #fafafa
 
 # Cores de realce (Hilight) na barra de progresso/seleção do OSD
 osd.hilight.bg:                                         flat
-osd.hilight.bg.color:                                   #5294E2
+osd.hilight.bg.color:                                   #2196F3
 osd.unhilight.bg:                                       flat
-osd.unhilight.bg.color:                                 #ffffff
+osd.unhilight.bg.color:                                 #e0e0e0

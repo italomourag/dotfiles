@@ -3,7 +3,7 @@ Actions=quit;
 Categories=Chat;Network;InstantMessaging;Qt;
 Comment=Nova era de mensagem
 DBusActivatable=false
-Exec=env KDE_FULL_SESSION=true QT_QPA_PLATFORMTHEME=kde XDG_CURRENT_DESKTOP=KDE Telegram
+Exec=env KDE_FULL_SESSION=true Telegram
 Icon=org.telegram.desktop
 Keywords=tg;chat;im;messaging;messenger;sms;tdesktop;
 MimeType=x-scheme-handler/tg;x-scheme-handler/tonsite;

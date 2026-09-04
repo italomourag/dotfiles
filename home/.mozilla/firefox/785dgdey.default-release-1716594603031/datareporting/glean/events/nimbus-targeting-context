@@ -1,0 +1,1 @@
+{"timestamp":17444956,"category":"nimbus_events","name":"enrollment_status","extra":{"reason":"Error","branch":"onboarding-cfrs","error_string":"l10n-missing-locale","status":"Disqualified","glean_timestamp":"1786670241081","slug":"built-in-vpn-messaging-evergreen"},"execution_counter":1}

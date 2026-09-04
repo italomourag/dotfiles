@@ -1,0 +1,7 @@
+gtk-icon-theme-name="Papirus-Dark"
+
+style "user-font"
+{
+    font_name = "Roboto Medium 10"
+}
+class "GtkWidget" style "user-font"
