@@ -17,35 +17,29 @@
             "color": { "user": "blue", "at": "20", "host": "blue" }
         },
         "break",
-
         // Identidade do Sistema
-        { "type": "os", "key": "󰣇 OS", "keyColor": "blue" },
-        { "type": "host", "key": "󰌢 Host", "keyColor": "blue" },
+        { "type": "os", "key": "󰣇 SO", "keyColor": "blue" },
+        { "type": "host", "key": "󰌢 Host", "keyColor": "blue", "format": "{version}" },
         { "type": "kernel", "key": "󰒋 Kernel", "keyColor": "blue" },
-        { "type": "uptime", "key": "󱎫 Uptime", "keyColor": "blue" },
-        { "type": "packages", "key": "󰏖 Packages", "keyColor": "blue" },
-
+        { "type": "uptime", "key": "󱎫 Tempo", "keyColor": "blue" },
+        { "type": "packages", "key": "󰏖 Pacotes", "keyColor": "blue" },
         "break",
-
         // Ambiente de Trabalho (Sua Personalização)
         { "type": "shell", "key": "󱆃 Shell", "keyColor": "blue" },
-        { "type": "display", "key": "󰍹 Resolution", "keyColor": "blue", "compactType": "original" },
-        { "type": "de", "key": "󰖲 DE", "keyColor": "blue" },
-        { "type": "wm", "key": "󱂬 WM", "keyColor": "blue" },
-        { "type": "wmtheme", "key": "󰉼 WM Theme", "keyColor": "blue" },
-        { "type": "icons", "key": "󰀻 Icons", "keyColor": "blue" },
+        { "type": "display", "key": "󰍹 Resolução", "keyColor": "blue", "compactType": "original" },
+{ "type": "command", "key": "󱂬 Sessão", "keyColor": "blue", "text": "pgrep -x openbox > /dev/null && echo 'Openbox' || echo 'KDE Plasma'" },
+        { "type": "wmtheme", "key": "󰉼 Tema", "keyColor": "blue" },
+        { "type": "icons", "key": "󰀻 Ícones", "keyColor": "blue" },
         { "type": "terminal", "key": "󰆍 Terminal", "keyColor": "blue" },
-        { "type": "terminalfont", "key": "󰛖 Font", "keyColor": "blue", "format": "{/2}{-}{/}{2}{?3} {3}{?}" },
-
+        { "type": "terminalfont", "key": "󰛖 Fonte", "keyColor": "blue", "format": "{/2}{-}{/}{2}{?3} {3}{?}" },
         "break",
-
         // Especificações de Hardware
         { "type": "cpu", "key": "󰻠 CPU", "keyColor": "blue" },
         { "type": "gpu", "key": "󰢮 GPU", "keyColor": "blue" },
-        { "type": "memory", "key": "󰍛 Memory", "keyColor": "blue", "format": "{/1}{-}{/}{/2}{-}{/}{} / {}" },
-        { "type": "disk", "key": "󰋊 Disk", "keyColor": "blue" },
-
+        { "type": "memory", "key": "󰍛 Memória", "keyColor": "blue", "format": "{/1}{-}{/}{/2}{-}{/}{} / {}" },
+        { "type": "disk", "key": "󰋊 Disco", "keyColor": "blue" },
         "break",
-        "colors"
+        "colors",
+        "break"
     ]
 }

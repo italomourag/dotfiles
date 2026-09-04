@@ -67,24 +67,24 @@ vertical_spin_indicators=false
 x11drag=menubar_and_primary_toolbar
 
 [GeneralColors]
-alt.base.color=#ffffff
-base.color=#ffffff
-button.color=#ffffff
+alt.base.color=#fff
+base.color=#fff
+button.color=#d5d6d9
 button.text.color=#444444
 dark.color=#c8c8c8
 disabled.text.color=#8b8b8b
 highlight.color=#1a73e83d
 highlight.text.color=#444444
 inactive.highlight.color=#1a73e83d
-light.color=#ffffff
+light.color=#e7e8eb
 link.color=#8ab4f8
 link.visited.color=#9c27b0
 mid.color=#e1e1e196
-mid.light.color=#f0f0f0
+mid.light.color=#e7e8eb
 progress.indicator.text.color=#444444
 text.color=#444444
-tooltip.text.color=#ffffff
-window.color=#f9f9f9
+tooltip.text.color=#e7e8eb
+window.color=#e7e8eb
 window.text.color=#444444
 
 [Hacks]

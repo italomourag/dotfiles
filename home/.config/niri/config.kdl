@@ -44,10 +44,10 @@ input {
 // Use `niri msg outputs` para encontrar o nome do seu monitor.
 /-output "eDP-1" {
     // Resolução e taxa de atualização.
-    mode "1920x1080@120.030"
+    mode "1920x1080@60"
 
     // Escala (pode ser fracionária, ex: 1.5).
-    scale 2
+    scale 1.5
 
     // Transformação (rotação): normal, 90, 180, 270, etc.
     transform "normal"
@@ -109,9 +109,11 @@ layout {
 
 // Programas iniciados na inicialização (Startup).
 spawn-at-startup "bash" "-c" "~/.config/niri/wallpaper.sh"
+spawn-at-startup "/usr/lib/xdg-desktop-portal-wlr"
+spawn-at-startup "bash" "-c" "sleep 2 && /usr/lib/xdg-desktop-portal"
 spawn-at-startup "quickshell"
 spawn-at-startup "dunst"
-spawn-at-startup "~/.config/dunst/musicnotify.sh"
+spawn-at-startup "~/.config/openbox/scripts/music_notify.sh"
 spawn-at-startup "/home/ito/.config/plasma-workspace/env/kvantum-shadow.sh"
 
 // Pular o pop-up de "Teclas de Atalho Importantes" ao iniciar.
@@ -123,11 +125,19 @@ hotkey-overlay {
 prefer-no-csd
 
 // Caminho para salvar prints (formatado com data e hora).
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Imagens/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 // Configurações de Animação.
 animations {
     // off // Descomente para desligar todas as animações.
+}
+
+blur {
+    // off
+    passes 3
+    offset 1
+    noise 0.02
+    saturation 1.5
 }
 
 // Regras de Janela (Window Rules).
@@ -159,37 +169,37 @@ window-rule {
 window-rule {
     match app-id="gimp$"
     default-column-width  { fixed 1342; }
-    default-window-height { fixed 758; }
+    default-window-height { fixed 858; }
 }
 
 window-rule {
     match app-id="firefox$"
     default-column-width  { fixed 1342; }
-    default-window-height { fixed 758; }
+    default-window-height { fixed 858; }
 }
 
 window-rule {
     match app-id="google-chrome$"
     default-column-width  { fixed 1342; }
-    default-window-height { fixed 758; }
+    default-window-height { fixed 858; }
 }
 
 window-rule {
     match app-id="spotify$"
     default-column-width  { fixed 1342; }
-    default-window-height { fixed 758; }
+    default-window-height { fixed 858; }
 }
 
 window-rule {
     match app-id="chrome-web.whatsapp.com__-Default"
     default-column-width  { fixed 1342; }
-    default-window-height { fixed 758; }
+    default-window-height { fixed 858; }
 }
 
 window-rule {
     match app-id="org.telegram.desktop"
     default-column-width  { fixed 1342; }
-    default-window-height { fixed 758; }
+    default-window-height { fixed 858; }
 }
 
 window-rule {
@@ -198,24 +208,62 @@ window-rule {
     default-window-height { fixed 758; }
 }
 
+window-rule {
+    match app-id="mpv"
+    open-floating true
+}
+
+// Enable blur behind the Alacritty terminal.
+window-rule {
+    match app-id="^kitty$"
+
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
+layer-rule {
+    match namespace="^notifications$"
+    geometry-corner-radius 6
+    opacity 0.70
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
+layer-rule {
+    match namespace="^rofi$"
+    geometry-corner-radius 8
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
 // Atalhos de Teclado (Binds).
 binds {
     // Atalhos de Sistema e Apps.
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+T { spawn "kitty"; }
-    Mod+Space { spawn "~/.config/rofi/drun/drun.sh"; }
+    Mod+Space { spawn "~/.config/rofi/drun/drun_wayland.sh"; }
     Mod+Alt+L { spawn "hyprlock"; }
+    Mod+Alt+Left  { set-column-width "-10%"; }
+    Mod+Alt+Right { set-column-width "+10%"; }
+    Mod+Alt+Up    { set-window-height "-10%"; }
+    Mod+Alt+Down  { set-window-height "+10%"; }
     Mod+Q { close-window; }
     Mod+Shift+E { quit; }
 
     // Controle de Áudio e Brilho.
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "~/.config/dunst/dunstvolume.sh -i"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "~/.config/dunst/dunstvolume.sh -d"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "~/.config/openbox/scripts/set_volume.sh -i"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "~/.config/openbox/scripts/set_volume.sh -d"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
 
-    XF86MonBrightnessUp   allow-when-locked=true { spawn-sh "bash ~/.config/dunst/dunstbright.sh 10%+"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "bash ~/.config/dunst/dunstbright.sh 10%-"; }
+    XF86MonBrightnessUp   allow-when-locked=true { spawn-sh "bash ~/.config/openbox/scripts/set_bright.sh 10%+"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "bash ~/.config/openbox/scripts/set_bright.sh 10%-"; }
 
     // Navegação de Foco (Vim-style e Setas).
     Mod+Left  { focus-column-left; }

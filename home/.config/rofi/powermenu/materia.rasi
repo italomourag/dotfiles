@@ -1,0 +1,17 @@
+/**
+ *
+ * Autor : Aditya Shakya (adi1090x)
+ * Modificado: italomourag
+ * Github : @adi1090x
+ * 
+ * Cores
+ **/
+
+* {
+    background:     #1e1e1ecc;
+    background-alt: #1e1e1ecc;
+    foreground:     #BAC5D0FF;
+    selected:       #5294E2FF;
+    active:         #98C379FF;
+    urgent:         #E06B74FF;
+}

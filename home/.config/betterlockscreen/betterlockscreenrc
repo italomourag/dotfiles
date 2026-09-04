@@ -1,5 +1,4 @@
 # ~/.config/betterlockscreenrc
-
 # ╔═══════════════════════════════╗
 # ║        Opções Gerais          ║
 # ╚═══════════════════════════════╝
@@ -8,7 +7,6 @@ span_image=false
 lock_timeout=300
 quiet=false
 wallpaper_cmd="feh --bg-fill"
-
 # ╔═══════════════════════════════╗
 # ║        Efeitos de Imagem      ║
 # ╚═══════════════════════════════╝
@@ -17,64 +15,53 @@ blur_level=15
 dim_level=40
 pixel_scale=10,1000
 solid_color=00000000
-
 # ╔═══════════════════════════════╗
 # ║           Posição             ║
 # ╚═══════════════════════════════╝
-lockargs=(--time-pos="ix+-105:iy+100")
-lockargs+=(--greeter-pos="ix-130:iy+120")
-lockargs+=(--ind-pos="ix+690:iy+480")
-
+lockargs=(--time-pos="660:370")
+lockargs+=(--greeter-pos="660:410")
+lockargs+=(--ind-pos="800:490")
+lockargs+=(--layout-pos="800:540")
 # ╔═══════════════════════════════╗
 # ║        Fundo e Sombra         ║
 # ╚═══════════════════════════════╝
 bgcolor=269cb6cc
 loginbox=00000000
 loginshadow=00000000
-
 # ╔═══════════════════════════════╗
-# ║        Tipografia             ║
+# ║            Fonte              ║
 # ╚═══════════════════════════════╝
-font="Roboto Bold"
-
+font="NotoSans NF"
 # ╔═══════════════════════════════╗
 # ║        Horário e Texto        ║
 # ╚═══════════════════════════════╝
-time_format="%d/%m  /  %H:%M"
-timecolor=444444
-locktext="Digite a senha para desbloquear"
-greetercolor=444444
-layoutcolor=ffffffff
-
+time_format="%d de %B, %H:%M"
+timecolor=b7d5de
+locktext="(󰌾  Digite a senha para desbloquear)"
+greetercolor=b7d5de
 # ╔═══════════════════════════════╗
 # ║        Anel de Senha          ║
 # ╚═══════════════════════════════╝
-ringcolor=e7e8eb
+ringcolor=b7d5de
 insidecolor=00000000
 separatorcolor=00000000
-
-ringvercolor=e7e8eb
-insidevercolor=00000000
-
-ringwrongcolor=e7e8eb
+ringvercolor=e7e8ebff
+insidevercolor=8e8e8e
+ringwrongcolor=e7e8ebff
 insidewrongcolor=d23c3dff
-
-keyhlcolor=444444
-bshlcolor=444444
+keyhlcolor=1e1e1e
+bshlcolor=000000
 modifcolor=d23c3dff
-
 # ╔═══════════════════════════════╗
 # ║        Textos de Status       ║
 # ╚═══════════════════════════════╝
 veriftext=""
-verifcolor=444444
+verifcolor=444444ff
 wrongtext=""
 wrongcolor=d23c3dff
-
 # ╔═══════════════════════════════╗
 # ║        Opções Avançadas       ║
 # ╚═══════════════════════════════╝
 # i3lockcolor_bin="i3lock-color"
 # suspend_command="systemctl suspend"
-# lockargs=()
 # lockargs+=(--ignore-empty-password)

@@ -172,7 +172,10 @@
         "format":             "  {temperatureC}°C"
     },
 
-    "custom/hyprpicker": {
+"custom/hyprpicker": {
         "format":             "󰈋",
         "on-click":           "hyprpicker -a -f hex",
-        "on-click-right":     "hyprpicker
+        "on-click-right":     "hyprpicker"
+    }
+
+}

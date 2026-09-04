@@ -12,7 +12,7 @@
 
 /* Janela Principal */
 window#waybar {
-    background:             transparent;
+    background-color:       transparent;
     border-bottom:          0px solid #444444;
     color:                  #f4d9e1;
 }
@@ -38,13 +38,11 @@ padding:                0;
 min-width:              12px;
 margin:                 4px 6px;
 background:             transparent;
-box-shadow:             none;
 color:                  #f4d9e1;
 }
 
 #workspaces button.active {
 background:             transparent;
-box-shadow:             none;
 color:                  #269cb6;
 text-shadow:            0 0 6px #269cb6;
 }

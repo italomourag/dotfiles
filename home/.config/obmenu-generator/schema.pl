@@ -93,6 +93,7 @@ our $SCHEMA = [
         {item => ["$editor ~/.config/openbox/rc.xml",    'Openbox RC',          'text-x-generic']},
         {item => ["$editor ~/.config/openbox/menu.xml",  'Openbox Menu',        'text-x-generic']},
         {item => ['openbox --reconfigure',               'Reconfigurar Openbox', 'openbox']},
+        {item => ['~/.config/openbox/scripts/toggle_theme.sh', 'Claro/Escuro', 'preferences-desktop-theme']},
       {end => undef},
     {end => undef},
 

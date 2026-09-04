@@ -1,9 +1,10 @@
 [user]
-pinned=kitty;org.kde.dolphin;google-chrome;WebApp-WhatsAppWeb5254;org.telegram.desktop;
+pinned=kitty;org.kde.dolphin;google-chrome;spotify;org.telegram.desktop;WebApp-WhatsApp3353;
 indicatorColorFromTheme=false
 forceIconSize=false
 indicatorStyle=0
 indicatorOrientation=1
 indicatorColor=rgb(82,148,226)
 inactiveColor=rgb(68,68,68)
-showWindowCount=true
+showWindowCount=false
+showPreviews=false

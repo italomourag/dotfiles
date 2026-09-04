@@ -1,26 +1,76 @@
-# Processos Iniciais
-dbus-update-activation-environment --systemd KDE_FULL_SESSION=true DESKTOP_SESSION=KDE KDE_SESSION_VERSION=6 QT_QPA_PLATFORMTHEME=qt6ct
-sleep 1 && /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1 &
-~/.config/autostart/notification-daemon.sh &
-picom -b &
-~/.config/dunst/musicnotify.sh &
+# ~/.config/openbox/autostart
+
+# Variáveis de ambiente
+export QT_QPA_PLATFORMTHEME=qt6ct
+export QT_FONT_DPI=120
+export KDE_SESSION_VERSION=6
+
+# Restaura tema dark/light da sessão anterior
+~/.local/bin/restore-ob-theme.sh
+
+# Remove sombra de menu no Kvantum
 sed -i 's/^menu_shadow_depth=.*/menu_shadow_depth=0/' \
-  ~/.config/Kvantum/MateriaLight/MateriaLight.kvconfig
-# Splash screen e abertura de programas
+    ~/.config/Kvantum/MateriaDark/MateriaDark.kvconfig
+sed -i 's/^menu_shadow_depth=.*/menu_shadow_depth=0/' \
+    ~/.config/Kvantum/MateriaLight/MateriaLight.kvconfig
+
+# Propagação de configurações GTK via XSETTINGS
+xsettingsd &
+
+# Display
+xrandr --output eDP-1 --mode 1920x1080 &
+
+# Desativa screen saver e DPMS
+xset -dpms
+xset s off
+xset -b
+
+# Evita que o kscreen do Plasma interfira na sessão Openbox
+systemctl --user stop plasma-kscreen.service
+systemctl --user mask plasma-kscreen.service
+
+# Portal XDG
+/usr/lib/xdg-desktop-portal &
+
+# Agente de autenticação Polkit
+/usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Compositor e notificações
+picom -b &
+~/.config/autostart/notification-daemon.sh &
+~/.config/openbox/scripts/music_notify.sh &
+
+# Aguarda o ambiente gráfico estabilizar antes de carregar painel e applets
 (
-    sleep 0.5
-    ~/.config/openbox/splash.sh &
+    MODE=$(cat ~/.config/openbox/scripts/theme-mode 2>/dev/null || echo "dark")
+
+    # Splash screen
+    sleep 0.4
+    if [[ "$MODE" == "dark" ]]; then
+        ~/.config/openbox/scripts/splash_dark.sh &
+    else
+        ~/.config/openbox/scripts/splash_light.sh &
+    fi
+
+    # Wallpaper e painel
     sleep 1
-    nitrogen --restore &
+    if [[ "$MODE" == "dark" ]]; then
+        nitrogen --set-zoom-fill ~/Imagens/.wallpaper_dark.jpg &
+    else
+        nitrogen --set-zoom-fill ~/Imagens/.wallpaper_light.jpg &
+    fi
     xfce4-panel &
+    dunst &
+
+    # Applets
+    sleep 1.4
     blueman-applet &
     nm-applet &
     xfce4-power-manager &
     xfce4-pulseaudio-plugin &
-    sleep 2.5
-    dunst &
+    conky &
 ) &
-# Configurações de Display/Hardware
-xset -dpms &
-xset s off &
-xset -b
+
+
+# Permissões X11
+xhost +local:

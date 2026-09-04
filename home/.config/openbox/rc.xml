@@ -7,7 +7,7 @@
     <screen_edge_strength>20</screen_edge_strength>
   </resistance>
   <focus>
-    <focusNew>yes</focusNew>
+    <focusNew>no</focusNew>
     <!-- sempre tente focar novas janelas quando elas aparecerem. outras regras se
        aplicam -->
     <followMouse>no</followMouse>
@@ -42,7 +42,7 @@
                   'Active' - onde a janela ativa está -->
   </placement>
   <theme>
-    <name>Materia Light</name>
+    <name>Materia Dark</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       os caracteres disponíveis são NDSLIMC, cada um pode ocorrer no máximo uma vez.
@@ -57,26 +57,26 @@
     <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Roboto</name>
-      <size>9</size>
+      <name>Roboto Medium</name>
+      <size>10</size>
       <!-- tamanho da fonte em pontos -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' ou 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' ou 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Roboto</name>
-      <size>9</size>
+      <name>Roboto Medium</name>
+      <size>10</size>
       <!-- tamanho da fonte em pontos -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' ou 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' ou 'normal' -->
     </font>
     <font place="MenuHeader">
       <name>Roboto Medium</name>
-      <size>9</size>
+      <size>10</size>
       <!-- tamanho da fonte em pontos -->
       <weight>Normal</weight>
       <!-- 'bold' ou 'normal' -->
@@ -84,28 +84,28 @@
       <!-- 'italic' ou 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Roboto</name>
-      <size>9</size>
+      <name>Roboto Medium</name>
+      <size>10</size>
       <!-- tamanho da fonte em pontos -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' ou 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' ou 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Roboto</name>
-      <size>9</size>
+      <name>Roboto Medium</name>
+      <size>10</size>
       <!-- tamanho da fonte em pontos -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' ou 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' ou 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Roboto</name>
-      <size>9</size>
+      <name>Materia Dark</name>
+      <size>10</size>
       <!-- tamanho da fonte em pontos -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' ou 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' ou 'normal' -->
@@ -317,31 +317,31 @@
       </action>
     </keybind>
     <!-- Atalhos de teclado para executar aplicativos -->
-    <keybind key="W-F9">
+    <keybind key="W-m">
       <action name="Execute">
         <command>~/.config/rofi/powermenu/powermenu.sh</command>
       </action>
     </keybind>
     <keybind key="W-space">
       <action name="Execute">
-        <command>~/.config/rofi/drun/drun.sh</command>
+        <command>~/.config/rofi/drun/drun_x11.sh</command>
       </action>
     </keybind>
     <keybind key="W-l">
       <action name="Execute">
-        <command>betterlockscreen -l dim</command>
+        <command>~/.config/betterlockscreen/betterlockscreen-blur.sh</command>
       </action>
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>spectacle</command>
+        <command>env KDE_FULL_SESSION=true /usr/bin/spectacle</command>
       </action>
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Konqueror</name>
+          <name>Materia Dark</name>
         </startupnotify>
         <command>kfmclient openProfile filemanagement</command>
       </action>
@@ -349,23 +349,23 @@
     <!-- Atalhos de teclado para brilho -->
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
-        <command>bash ~/.config/dunst/dunstbright.sh 10%+</command>
+        <command>bash ~/.config/openbox/scripts/set_bright.sh 10%+</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
-        <command>bash ~/.config/dunst/dunstbright.sh 10%-</command>
+        <command>bash ~/.config/openbox/scripts/set_bright.sh 10%-</command>
       </action>
     </keybind>
     <!-- Atalhos de teclado para volume -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>~/.config/dunst/dunstvolume.sh -i</command>
+        <command>~/.config/openbox/scripts/set_volume.sh -i</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>~/.config/dunst/dunstvolume.sh -d</command>
+        <command>~/.config/openbox/scripts/set_volume.sh -d</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
@@ -387,6 +387,9 @@
     <!-- Defina isso como TRUE para mover o ponteiro do mouse pela área de trabalho ao
        trocar devido ao contato com a borda da tela -->
     <context name="Frame">
+      <mousebind button="Middle" action="Click">
+        <action name="ToggleAlwaysOnTop"/>
+      </mousebind>
       <mousebind button="A-Left" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
@@ -738,8 +741,8 @@
   # este é um exemplo com comentários ao longo. use-os para criar suas
   # próprias regras, mas sem os comentários, é claro.
   <application name="primeiro elemento da propriedade WM_CLASS da janela (veja xprop)"
-              class="segundo elemento da propriedade WM_CLASS da janela (veja xprop)"
-               role="a propriedade WM_WINDOW_ROLE da janela (veja xprop)">
+    class="segundo elemento da propriedade WM_CLASS da janela (veja xprop)"
+    role="a propriedade WM_WINDOW_ROLE da janela (veja xprop)">
   # o nome ou a classe podem ser definidos, ou ambos. isso é usado para combinar
   # janelas quando aparecem. a role também pode ser definido opcionalmente, para
   # restringir ainda mais suas combinações.
@@ -788,8 +791,16 @@
   </application>
   # fim do exemplo
 -->
-    <application class="luajit" title="*KOReader*">
-      <maximized>true</maximized>
+    <application class="WebApp-Stremio5159">
+      <size>
+        <width>1400</width>
+        <height>900</height>
+      </size>
+      <position force="yes">
+        <x>center</x>
+        <y>center</y>
+      </position>
+      <decor>yes</decor>
     </application>
     <application class="kitty">
       <position force="no">
@@ -797,19 +808,13 @@
         <y>center</y>
       </position>
     </application>
-    <application class="Thunar">
+    <application class="Chrome">
       <position force="no">
         <x>center</x>
         <y>center</y>
       </position>
     </application>
-    <application class="Chromium">
-      <position force="no">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
-    <application class="Mousepad">
+    <application class="Kate">
       <position force="no">
         <x>center</x>
         <y>center</y>

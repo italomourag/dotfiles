@@ -1,7 +1,10 @@
 #!/bin/bash
-scrot /tmp/lock_screen.png
-convert /tmp/lock_screen.png \
-    \( -clone 0 -fill "#269cb6" -colorize 70 \) \
-    -composite /tmp/lock_tinted.png
-betterlockscreen -u /tmp/lock_tinted.png --blur 1.0
-betterlockscreen -l blur
+
+playerctl pause
+scrot -o /tmp/screen.png
+convert /tmp/screen.png \
+    -blur 0x8 \
+    \( -clone 0 -fill "#1e1e1e" -colorize 80 \) \
+    -composite /tmp/lock_final.png
+betterlockscreen -u /tmp/lock_final.png
+betterlockscreen -l

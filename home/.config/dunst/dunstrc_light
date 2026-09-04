@@ -1,0 +1,234 @@
+# Dunst Configuration - Veja dunst(5) para todas as opções de configuração */
+
+[global]
+    ### Exibição ###
+
+    # Em qual monitor as notificações devem ser exibidas.
+    monitor =                   0
+
+    # Exibir notificação no monitor focado. Os modos possíveis são:
+    # mouse: seguir o ponteiro do mouse
+    # keyboard: seguir a janela com foco no teclado
+    # none: não seguir nada
+    # "keyboard" precisa de um gerenciador de janelas que exporte a propriedade _NET_ACTIVE_WINDOW.
+    follow =                    none
+
+    ### Geometria ###
+
+    # Largura da notificação (mínima, máxima).
+    width =                     (300, 300)
+
+    # A altura de uma única notificação, excluindo a moldura.
+    height =                    (50, 100)
+
+    # Posicionar a notificação na tela.
+    origin =                    bottom-right
+
+    # Deslocamento a partir da origem (distância das bordas).
+    offset =                    31x32
+
+    # Fator de escala. É detectado automaticamente se o valor for 0.
+    scale =                     0
+
+    # Número máximo de notificações visíveis (0 significa sem limite).
+    notification_limit =        3
+
+    ### Barra de progresso ###
+
+    # Ativar a barra de progresso (ex: dunstify -h int:value:12).
+    progress_bar =              true
+
+    # Altura da barra de progresso (incluindo a moldura).
+    progress_bar_height =       10
+
+    # Definir a largura da moldura da barra de progresso.
+    progress_bar_frame_width =  1
+
+    # Definir a largura mínima para a barra de progresso.
+    progress_bar_min_width =    150
+
+    # Definir a largura máxima para a barra de progresso.
+    progress_bar_max_width =    300
+
+    # Raio do canto para a barra de progresso (0 desabilita).
+    progress_bar_corner_radius = 0
+
+    # Quais cantos arredondar na barra de progresso.
+    progress_bar_corners =      all
+
+    ### Ícones ###
+
+    # Raio do canto para a imagem do ícone.
+    icon_corner_radius =        0
+
+    # Quais cantos arredondar na imagem do ícone.
+    icon_corners =              all
+
+    # Pesquisa recursiva de ícones (permite usar apenas o nome do tema).
+    enable_recursive_icon_lookup = true
+
+    # Definir tema de ícone.
+    icon_theme =                Papirus-Light
+
+    # Alinhamento do ícone (left, right, top, off).
+    icon_position =             left
+
+    # Tamanho mínimo e máximo dos ícones.
+    min_icon_size =             16
+    max_icon_size =             64
+
+    ### Aparência Visual ###
+
+    # Mostrar quantas mensagens estão atualmente ocultas por causa do limite.
+    indicate_hidden =           no
+
+    # Transparência da janela [0; 100] (Requer compositor).
+    transparency =              0
+
+    # Altura da linha separadora entre notificações (em pixels).
+    separator_height =          2
+
+    # Preenchimento entre o texto e o separador/borda.
+    padding =                   8
+    horizontal_padding =        8
+
+    # Preenchimento entre texto e ícone.
+    text_icon_padding =         0
+
+    # Largura e cor da moldura ao redor da janela.
+    frame_width =               0
+    frame_color =               "#aaaaaa"
+
+    # Espaço entre notificações (requer compositor).
+    gap_size =                  0
+
+    # Cor do separador (auto, foreground, frame ou cor HEX).
+    separator_color =           frame
+
+    # Ordenar notificações (id, urgency_ascending, urgency_descending, update).
+    sort =                      yes
+
+    # Raio dos cantos da janela de notificação.
+    corner_radius =             6
+
+    # Quais cantos da janela arredondar.
+    corners =                   all
+
+    ### Texto ###
+
+    # Fonte do texto.
+    font =                      Roboto, Medium 10
+
+    # Espaçamento entre linhas.
+    line_height =                0
+
+    # Permitir marcação HTML (full, strip, no).
+    markup =                    full
+
+    # Formato da mensagem (%a app, %s resumo, %b corpo, %p progresso).
+    format =                    "<b>%s</b>\n%b"
+
+    # Alinhamento do texto (left, center, right).
+    alignment =                 left
+
+    # Alinhamento vertical (top, center, bottom).
+    vertical_alignment =        center
+
+    # Mostrar idade da mensagem se for mais velha que este valor (segundos).
+    show_age_threshold =        60
+
+    # Onde fazer a elipse em linhas longas (start, middle, end).
+    ellipsize =                 middle
+
+    # Ignorar quebras de linha '\n' nas notificações.
+    ignore_newline =            no
+
+    # Agrupar notificações com o mesmo conteúdo.
+    stack_duplicates =          true
+
+    # Ocultar a contagem de notificações empilhadas.
+    hide_duplicate_count =      false
+
+    # Exibir indicadores para URLs (U) e ações (A).
+    show_indicators =           yes
+
+    ### Histórico ###
+
+    # Notificações do histórico devem ser fixas ou expirar normalmente.
+    sticky_history =            yes
+
+    # Máxima quantidade de notificações no histórico.
+    history_length =            5
+
+    ### Diversos / Avançado ###
+
+    dmenu =                     /usr/bin/dmenu -p dunst:
+    browser =                   /usr/bin/xdg-open
+    always_run_script =         true
+    title =                     Dunst
+    class =                     Dunst
+    ignore_dbusclose =          false
+    force_xwayland = false
+    force_xinerama =            false
+
+    ### Mouse ###
+
+    # Ações para cliques (none, do_action, open_url, close_current, close_all, context).
+    mouse_left_click =          close_current
+    mouse_middle_click =        do_action, close_current
+    mouse_right_click =         close_all
+
+[experimental]
+    # Calcular DPI com base em cada monitor individualmente.
+    per_monitor_dpi =           false
+
+# Níveis de Urgência
+
+[urgency_low]
+    background =                "#e7e8ebfa"
+    foreground =                "#5c616c"
+    highlight =                 "#5294E2"
+    timeout =                   4
+
+[urgency_normal]
+    background =                "#e7e8ebfa"
+    foreground =                "#5c616c"
+    highlight =                 "#5294E2"
+    timeout =                   4
+    override_pause_level =      30
+
+[urgency_critical]
+    background =                "#f44336fa"
+    foreground =                "#ffffff"
+    highlight =                 "#ffffff"
+    frame_color =               "#f44336"
+    timeout =                   0
+    override_pause_level =      60
+
+# Regras de Filtragem Específicas
+
+[ignore-battery-on-boot]
+    appname = xfce4-power-manager
+    summary = Gerenciador de energia
+    skip_display = yes
+
+[ignore-battery-charging]
+    # Ignora notificação de bateria carregando do XFCE.
+    appname =                   xfce4-power-manager
+    body =                      "*carregando*"
+    skip_display =              yes
+
+[ignore-battery-full]
+    # Ignora notificação de bateria cheia.
+    appname =                   xfce4-power-manager
+    body =                      "*totalmente carregada*"
+    skip_display =              yes
+
+[battery-critical-force-show]
+    # Força a exibição de bateria crítica mesmo se o Dunst estiver pausado.
+    appname =                   xfce4-power-manager
+    msg_urgency =               critical
+    skip_display =              no
+    override_pause_level =      60
+
+# vim: ft=cfg

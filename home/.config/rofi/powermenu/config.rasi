@@ -10,7 +10,7 @@ configuration {
 
 @import                          "~/.config/rofi/powermenu/fonts.rasi"
 @import                          "~/.config/rofi/powermenu/colors.rasi"
-@import                          "~/.config/rofi/powermenu/arc.rasi"
+@import                          "~/.config/rofi/powermenu/materia.rasi"
 
 window {
     transparency:                "real";
